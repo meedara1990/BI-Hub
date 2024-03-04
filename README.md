@@ -10,3 +10,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 https://steffodimfelt.medium.com/add-eslint-and-prettier-to-angular-6d475cfcc823
 
+## Lint Fix
+
+ npm lint --fix
