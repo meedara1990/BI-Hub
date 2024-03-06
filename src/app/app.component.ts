@@ -4,6 +4,7 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardsComponent } from './cards/cards.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     NgbDropdownModule,
     HeaderComponent,
     BodyComponent,
-    FooterComponent
+    FooterComponent,
+    CardsComponent
   ]
 })
 export class AppComponent {
