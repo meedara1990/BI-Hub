@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 //import json from './dashboards.json';
 @Component({
@@ -11,15 +10,6 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.scss'
 })
-export class CardsComponent implements OnInit {
-   navItems: any;
-
-   constructor(private httpClient: HttpClient) { }
-
-    ngOnInit() {
-      
-    }
-
-   
-
+export class CardsComponent {
+  constructor(private httpClient: HttpClient) {}
 }
