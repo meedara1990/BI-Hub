@@ -11,29 +11,28 @@
       "doChildren": true,
       "children": [
         {
-          "childId": "NMG",
+          "childId":"ExecutiveDashboard",
+          "childGroup": "NMG",
           "childName": "",
           "childDisplayName": "Executive Dashboard",
           "url": "",
-          "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation",
-          "parentName": "nmg-kpis"
+          "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation"
         },
         {
-          "iconPath": "KPIs.png",
-          "menuColor": "#138cff",
+
           "childId": "NMG",
+          "childGroup": "NMG",
           "childName": "",
-          "childTooltip": "Demand to Net",
           "childDisplayName": "Demand to Net",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "coming soon",
-          "parentName": "nmg-kpis"
+          "description": "coming soon"
         }
       ]
     },
     {
       "faIcon":"fa-user",
+      "color":"#CC9A06",
+      "bgColor":"#FFDA6A",
       "id": "CUS",
       "name": "customer",
       "displayName": "Customer/CRM",
@@ -42,76 +41,52 @@
       "doChildren": true,
       "children": [
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
+          "childGroup": "BGB",
           "childId": "BGB",
           "childName": "",
-          "childTooltip": "BGB - Business Performance Dashbaord",
           "childDisplayName": "BGB - Performance Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Sales performance by customer segmentation. Filterable by Channel, Price Type, Sales Type, Division, and Time Frame.",
-          "parentName": "nmg-kpis"
+          "description": "Sales performance by customer segmentation. Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
+          "childGroup": "BGB",
           "childId": "BGB",
           "childName": "",
           "childTooltip": "BGB - Customer Demographics",
           "childDisplayName": "BGB - Customer Demographics",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Demographics and sales data for Active customers (L12M) filterable by customer segmentation or by demographics.",
-          "parentName": "nmg-kpis"
+          "description": "Demographics and sales data for Active customers (L12M) filterable by customer segmentation or by demographics."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
+          "childGroup": "BGB",
           "childId": "BGB",
           "childName": "",
-          "childTooltip": "BGB - New Cust. Repurchase Rates",
           "childDisplayName": "BGB - New Cust. Repurchase Rates",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "New customers acquired online.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation.",
-          "parentName": "nmg-kpis"
+          "description": "New customers acquired online.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
+          "childGroup": "BGB",
           "childId": "BGB",
           "childName": "",
-          "childTooltip": "BGB - Personalized Promotions",
           "childDisplayName": "BGB - Personalized Promotions",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Private promotions performance measuring Test group against Control group with sales incrementality and redemption rates.",
-          "parentName": "nmg-kpis"
+          "description": "Private promotions performance measuring Test group against Control group with sales incrementality and redemption rates."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
+          "childGroup": "BGB",
           "childId": "BGB",
           "childName": "",
-          "childTooltip": "BGB - New Existing Cust. Performance",
           "childDisplayName": "BGB - New Existing Cust. Performance",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Sales performance by new and existing customers.  Filterable by Channel, Price Type, Sales Type, Division, and Time Frame.",
-          "parentName": "nmg-kpis"
+          "description": "Sales performance by new and existing customers.  Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
           "childId": "BGB",
           "childName": "",
-          "childTooltip": "BGB - Private Client Tracking",
           "childDisplayName": "BGB - Private Client Tracking",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "VVIC/VIC customers from FY23, compares segment sales performance YTD to LY, sales detail for customers.",
-          "parentName": "nmg-kpis"
+          "description": "VVIC/VIC customers from FY23, compares segment sales performance YTD to LY, sales detail for customers."
         },
         {
           "iconPath": "customer.png",
