@@ -4,7 +4,6 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
-import { CardsComponent } from './cards/cards.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 
 @Component({
@@ -18,7 +17,6 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
     HeaderComponent,
     BodyComponent,
     FooterComponent,
-    CardsComponent,
     MainDashboardComponent
   ]
 })
