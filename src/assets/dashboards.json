@@ -141,6 +141,8 @@
     {
       "faIcon":"fa-chart-simple",
       "id": "WEB_OPERATIONS",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "name": "web-operations",
       "displayName": "Ecomm Management & Web Operations",
       "description": "All the eCommerce, Digital selling, Acquisition & Growth, Product Management related Dashboards and metrics",
@@ -201,6 +203,8 @@
       "faIcon":"fa-store",
       "id": "STORE",
       "name": "stores",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "displayName": "Stores",
       "description": "Store Level Reports on 360 demand vs the capacity to support & sustain it",
       "parentRoute": "",
@@ -271,6 +275,9 @@
     {
       "icon": "business",
       "menuColor": "#8e7cc3",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
+      "faIcon":"fa-bullhorn",
       "iconPath": "marketing.png",
       "id": "MAR",
       "name": "marketing",
@@ -295,7 +302,10 @@
     },
     {
       "icon": "add_business",
+      "faIcon":"fa-cart-shopping",
       "menuColor": "#c30917",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "iconPath": "merchant.png",
       "id": "MER",
       "name": "merchant",
@@ -428,6 +438,9 @@
     },
     {
       "icon": "misc",
+      "faIcon":"fa-users",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "menuColor": "#004cff",
       "iconPath": "cart.png",
       "id": "PPPL_SER",
@@ -465,6 +478,9 @@
     },
     {
       "icon": "supplyChain",
+      "faIcon":"fa-truck",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "menuColor": "#00f701",
       "iconPath": "supplyChain.png",
       "id": "SUPPLY_CHAIN",
