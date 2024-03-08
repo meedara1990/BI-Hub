@@ -1,25 +1,20 @@
 {
   "dashboards": [
     {
-      "icon": "query_stats",
-      "menuColor": "#138cff",
-      "iconPath": "KPIs.png",
       "id": "KPI",
       "name": "nmg-kpis",
       "displayName": "NMG KPIs",
       "description": "Executive Dashboards for Board, GLT & SLT members",
-      "parentRoute": "",
+      "faIcon":"fa-chart-line",
+      "color":"#9EC5FE",
+      "bgColor":"#0D6EFD",
       "doChildren": true,
       "children": [
         {
-          "iconPath": "KPIs.png",
-          "menuColor": "#138cff",
           "childId": "NMG",
           "childName": "",
-          "childTooltip": "Executive Dashboard",
           "childDisplayName": "Executive Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.jpeg",
           "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation",
           "parentName": "nmg-kpis"
         },
@@ -38,9 +33,7 @@
       ]
     },
     {
-      "icon": "person",
-      "menuColor": "#ff4a77",
-      "iconPath": "customer.png",
+      "faIcon":"fa-user",
       "id": "CUS",
       "name": "customer",
       "displayName": "Customer/CRM",
@@ -171,9 +164,7 @@
       ]
     },
     {
-      "icon": "people_services",
-      "menuColor": "#004cff",
-      "iconPath": "finance.png",
+      "faIcon":"fa-chart-simple",
       "id": "WEB_OPERATIONS",
       "name": "web-operations",
       "displayName": "Ecomm Management & Web Operations",
@@ -232,9 +223,7 @@
       ]
     },
     {
-      "icon": "add_business",
-      "menuColor": "#feb901",
-      "iconPath": "stores.png",
+      "faIcon":"fa-store",
       "id": "STORE",
       "name": "stores",
       "displayName": "Stores",
