@@ -60,13 +60,22 @@
   
 
 }
+.card:hover{
+  border: 2px solid #0d6efd;
+}
+.dropdown-toggle:hover{
+  background: none;
+  color: #000;
+}
 .card-title{
   font-size: 14px;
 }
 .card-text{
  font-size: 12px;
 }
-
+.custom-dropdown{
+  border:1px solid #ccc;
+}
 section{
   padding: 85px 0;
 }
