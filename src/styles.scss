@@ -149,6 +149,7 @@ section{
 }
 .profile-box{
   right: 0px;
+  font-family: 'Open Sans';
 }
 .profile-icon{
   font-size: 50px !important;
@@ -156,9 +157,9 @@ section{
   margin: 0 auto;
   margin-top: -40px;
 }
-.profile-box h3, p, i{
+.profile-box h3, .profile-box p, .profile-box i{
   text-align: center;
-  font-family: 'Open Sans';
+
 }
 .profile-box h3{
   font-size: 20px;
@@ -252,7 +253,19 @@ section{
     -ms-flex-pack: center;
     justify-content: center; } 
   }
-
+@media (max-width:767px){
+  .navbar-right{
+    float: left;
+  }
+  
+  #navbarSupportedContent{
+    margin-top:10px;
+    
+  }
+  .profile-box{
+    width: 100%;
+  }
+}
 .footer_sub-nav li {
   padding-left: .75rem;
   padding-right: .75rem; }
