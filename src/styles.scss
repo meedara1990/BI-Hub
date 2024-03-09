@@ -171,6 +171,13 @@ section{
   background-color :#ccc;
 
 }
+.footer{
+  background-color :#ccc;
+}
+
+.footer ul{
+  margin: 0 auto;
+}
 .dropdown-toggle {
   white-space: nowrap;
   font-size: 11px;
@@ -178,3 +185,49 @@ section{
   color: #000;
   border: none;
 }
+.footer {
+  font-size: 13px;
+  //border-top: 1px solid #D5DCE5;
+  font-family: "Open Sans";
+  color: #59626D; }
+.footer a{
+    color: #000;
+    text-decoration: none;
+}
+.footer p{
+  color: #000;
+}
+.footer-inner {
+  padding: 10px 0;
+ }
+
+.footer_item:not(:last-child) {
+  border-bottom: 1px solid #D5DCE5;
+  padding-bottom: 15px;
+  margin-bottom: 20px; }
+
+.footer_email-input {
+  min-width: 250px; }
+  @media (max-width: 767px) {
+    .footer_email-input {
+      min-width: 0; } }
+
+@media (max-width: 767px) {
+  .footer_sub-nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } 
+  }
+
+.footer_sub-nav li {
+  padding-left: .75rem;
+  padding-right: .75rem; }
+.footer_sub-nav li:first-child {
+    padding-left: 0; }
+.footer_sub-nav li a {
+    font-size: 13px;
+    display: block;
+    color: #59626D;
+    padding: .5rem 0; }
+.footer_sub-nav li a:hover, .footer_sub-nav li a:focus {
+      color: #424951; }
