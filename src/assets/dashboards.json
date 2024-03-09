@@ -142,7 +142,7 @@
       "faIcon":"fa-chart-simple",
       "id": "WEB_OPERATIONS",
       "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
+      "bgColor":"#28a745",
       "name": "web-operations",
       "displayName": "Ecomm Management & Web Operations",
       "description": "All the eCommerce, Digital selling, Acquisition & Growth, Product Management related Dashboards and metrics",
