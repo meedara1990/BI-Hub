@@ -87,6 +87,46 @@
 .card-text{
  font-size: 12px;
 }
+.body-title{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.body-text{
+  margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  /* padding: 12px 16px; */
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 12px;
+  padding: 5px;
+
+}
+.dropdown-content i{
+  font-size: 16px;
+  padding: 5px;
+  position: relative;
+  top: 2px;
+}
+.navbar-right{
+  float: right;
+}
 .dropdown-toggle:hover{
   background: none;
   color: #000;
