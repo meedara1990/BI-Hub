@@ -147,6 +147,22 @@
 section{
   padding: 85px 0;
 }
+.profile-box{
+  right: 0px;
+}
+.profile-icon{
+  font-size: 50px !important;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+.profile-box h3, p, i{
+  text-align: center;
+  font-family: 'Open Sans';
+}
+.profile-box h3{
+  font-size: 20px;
+}
 .card {
   padding: 3px 10px;
   margin: 3px 10px;
@@ -165,8 +181,26 @@ section{
 #intro {
   background-color :#0d6efd;
   color:#fff
-}
+}.input-group-text{
+  color: #fff !important;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
 
+}
+.profile-head{
+  background-color: #ccc;
+  height: 53px;
+  margin-top: -8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.profile{
+  font-size: 27px;
+    margin-right: 10px;
+}
+.profile-content{
+  padding: 10px;
+}
 #intro1{
   background-color :#ccc;
 
@@ -233,4 +267,19 @@ section{
       color: #424951; }
 .custom-search{
   border: none;
+  background: rgba(255, 255, 255, 0.5);
+  left: 1px;
+
+}
+.custom-search::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #fff;
+  }
+.custom-search:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+  }
+.custom-search::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+  
 }
