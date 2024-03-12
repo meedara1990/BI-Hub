@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './header.component.html'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+ 
+  isOpened: boolean=false;
+
+
+
+toggle(){
+ this.isOpened=!this.isOpened;
+  }
+ 
+}
