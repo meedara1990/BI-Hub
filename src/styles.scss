@@ -219,6 +219,7 @@ section{
 .footer ul{
   margin: 0 auto;
 }
+
 .dropdown-toggle {
   white-space: nowrap;
   font-size: 11px;
@@ -249,22 +250,22 @@ section{
 
 .footer_email-input {
   min-width: 250px; }
-  @media (max-width: 767px) {
-    .footer_email-input {
-      min-width: 0; } }
 
-@media (max-width: 767px) {
-  .dropdown-content{
- width: 100%;
- display: block;
- min-width: 450px;
-  }
-  .footer_sub-nav {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } 
-  }
 @media (max-width:767px){
+  .footer_email-input {
+    min-width: 0; }
+  .dropdown-content{
+    width: 100%;
+    display: block;
+    min-width: 450px;
+     }
+     .footer p{
+       text-align: center;
+     }
+     .footer_sub-nav {
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       justify-content: center; } 
   .navbar-right{
     float: left;
   }
