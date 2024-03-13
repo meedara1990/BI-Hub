@@ -1,8 +1,8 @@
 <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
 <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
-<div class="card-body" role="grid" (click)="onClick()">
+<div class="card-body" role="grid">
   <div class="d-flex flex-column bd-highlight mb-3" style="height: 200px">
-    <div class="mb-auto">
+    <div class="mb-auto" (click)="onClick()">
       <div class="row">
         <div class="col-sm-9">
           <h5 class="card-title">{{dashboard.displayName}}</h5>

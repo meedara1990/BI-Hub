@@ -32,7 +32,7 @@ export class DashbaordCardComponent implements OnInit {
   }
 
   onClick() {
-    this.router.navigate(['/dashboad-details', this.dashboard.id], {
+    this.router.navigate(['/dashboads', this.dashboard.id], {
       state: this.dashboard
     });
   }

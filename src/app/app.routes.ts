@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { DashboardDetailsComponent } from './dashboard-details/dashboard-details.component';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+import { DashboardDetailsComponent } from './dashboard-details/dashboard-details.component';
 
 export const routes: Routes = [
   {
@@ -8,6 +9,11 @@ export const routes: Routes = [
     title: 'Dashboard',
     component: MainDashboardComponent,
     pathMatch: 'full'
+  },
+  {
+    path: 'dashboads/:id',
+    title: 'Dashboards',
+    component: DashboardsComponent
   },
   {
     path: 'dashboad-details/:id',

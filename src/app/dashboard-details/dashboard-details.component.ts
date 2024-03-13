@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Dashboard } from '../types/responses/Dashboard';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,12 +8,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './dashboard-details.component.html',
   styleUrl: './dashboard-details.component.scss'
 })
-export class DashboardDetailsComponent implements OnInit {
-  @Input() id!: string;
-  dashboard?: Dashboard;
-
-  ngOnInit(): void {
-    this.dashboard = history.state;
-    console.log('Dashbaord', this.dashboard);
-  }
-}
+export class DashboardDetailsComponent {}
