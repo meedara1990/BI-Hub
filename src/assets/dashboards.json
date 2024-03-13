@@ -2,27 +2,22 @@
   "dashboards": [
     {
       "id": "KPI",
-      "name": "nmg-kpis",
       "displayName": "NMG KPIs",
       "description": "Executive Dashboards for Board, GLT & SLT members",
       "faIcon":"fa-chart-line",
       "color":"#9EC5FE",
       "bgColor":"#0D6EFD",
-      "doChildren": true,
       "children": [
         {
-          "childId":"ExecutiveDashboard",
+          "childId":"0",
           "childGroup": "NMG",
-          "childName": "",
           "childDisplayName": "Executive Dashboard",
           "url": "",
           "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation"
         },
         {
-
-          "childId": "NMG",
+          "childId": "1",
           "childGroup": "NMG",
-          "childName": "",
           "childDisplayName": "Demand to Net",
           "url": "",
           "description": "coming soon"
@@ -30,172 +25,123 @@
       ]
     },
     {
+      "id": "CUS",
       "faIcon":"fa-user",
       "color":"#CC9A06",
       "bgColor":"#FFDA6A",
-      "id": "CUS",
       "name": "customer",
       "displayName": "Customer/CRM",
       "description": "NM & BG Customer related dashboards & metrics like Client Advisor relationships, Customer Trips, Customer Segmentation & Sales",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
           "childGroup": "BGB",
-          "childId": "BGB",
-          "childName": "",
+          "childId": "0",
           "childDisplayName": "BGB - Performance Dashboard",
           "url": "",
           "description": "Sales performance by customer segmentation. Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {
           "childGroup": "BGB",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - Customer Demographics",
+          "childId": "1",
           "childDisplayName": "BGB - Customer Demographics",
           "url": "",
           "description": "Demographics and sales data for Active customers (L12M) filterable by customer segmentation or by demographics."
         },
         {
           "childGroup": "BGB",
-          "childId": "BGB",
-          "childName": "",
+          "childId": "2",
           "childDisplayName": "BGB - New Cust. Repurchase Rates",
           "url": "",
           "description": "New customers acquired online.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
           "childGroup": "BGB",
-          "childId": "BGB",
-          "childName": "",
+          "childId": "3",
           "childDisplayName": "BGB - Personalized Promotions",
           "url": "",
           "description": "Private promotions performance measuring Test group against Control group with sales incrementality and redemption rates."
         },
         {
           "childGroup": "BGB",
-          "childId": "BGB",
+          "childId": "4",
           "childName": "",
           "childDisplayName": "BGB - New Existing Cust. Performance",
           "url": "",
           "description": "Sales performance by new and existing customers.  Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {
-          "childId": "BGB",
-          "childName": "",
+          "childId": "5",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - Private Client Tracking",
           "url": "",
           "description": "VVIC/VIC customers from FY23, compares segment sales performance YTD to LY, sales detail for customers."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - Planning & Goals",
+          "childGroup": "BGB",
+          "childId": "6",
           "childDisplayName": "BGB - Planning & Goals",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Tracks retention rates for top segments and for channel.",
-          "parentName": "nmg-kpis"
+          "description": "Tracks retention rates for top segments and for channel."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "",
+          "childId": "7",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - FY23 BG Business Performance Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Archived Performance Dashboard. Price type of Non-Reg is broken out into reg promo/clearance in current version.",
-          "parentName": "nmg-kpis"
+          "description": "Archived Performance Dashboard. Price type of Non-Reg is broken out into reg promo/clearance in current version."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "",
+          "childId": "8",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - FY 23 BGO New Customer - Repurchase Rates",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "New customers acquired online in FY23.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation.",
-          "parentName": "nmg-kpis"
+          "description": "New customers acquired online in FY23.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
-          "iconPath": "customer.png",
-          "menuColor": "#ff4a77",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - Customer Spend Band Dashboard",
+          "childId": "9",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - Customer Spend Band Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Scores BG level customer spend and BGB/BGS/BGO level spend band performance. Sales&Trips by Customer Spend Band broken down by Channel/Div/Price Type(12mo History & LY/FY19 comps).",
-          "parentName": "nmg-kpis"
+          "description": "Scores BG level customer spend and BGB/BGS/BGO level spend band performance. Sales&Trips by Customer Spend Band broken down by Channel/Div/Price Type(12mo History & LY/FY19 comps)."
         }
       ]
     },
     {
-      "faIcon":"fa-chart-simple",
       "id": "WEB_OPERATIONS",
-      "color":"#9EC5FE",
-      "bgColor":"#28a745",
+      "faIcon":"fa-chart-simple",
+      "color":"#198754",
+      "bgColor":"#A3CFBB",
       "name": "web-operations",
       "displayName": "Ecomm Management & Web Operations",
       "description": "All the eCommerce, Digital selling, Acquisition & Growth, Product Management related Dashboards and metrics",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "finance.png",
-          "menuColor": "#004cff",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Web Style Performance",
+          "childGroup": "NMG",
+          "childId": "0",
           "childDisplayName": "Web Style Performance",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_pinnacle.png",
-          "description": "Contextualize trend of Traffic, Conversion & Demand to understand the % which is negated downstream in the form of Cancels, Returns",
-          "parentName": "digital-business"
+          "description": "Contextualize trend of Traffic, Conversion & Demand to understand the % which is negated downstream in the form of Cancels, Returns"
         },
         {
-          "iconPath": "finance.png",
-          "menuColor": "#004cff",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - Cancel Code",
+          "childId": "1",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - Cancel Code",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Cancels trended by reason code, division, vendor, class, price type.",
-          "parentName": "digital-business"
+          "description": "Cancels trended by reason code, division, vendor, class, price type."
         },
         {
-          "iconPath": "finance.png",
-          "menuColor": "#004cff",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - Return Report",
+          "childId": "2",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - Return Report",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Returns trended, by reason code, vendor, marketing channel, class, and depiction.",
-          "parentName": "digital-business"
+          "description": "Returns trended, by reason code, vendor, marketing channel, class, and depiction."
         },
         {
-          "iconPath": "finance.png",
-          "menuColor": "#004cff",
-          "childId": "BGB",
-          "childName": "",
-          "childTooltip": "BGB - World of Pre-Order",
+          "childId": "3",
+          "childGroup": "BGB",
           "childDisplayName": "BGB - World of Pre-Order ",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Pre-Order item transactional metrics. In this data set, pre-order is flagged once shipped.",
-          "parentName": "digital-business"
+          "description": "Pre-Order item transactional metrics. In this data set, pre-order is flagged once shipped."
         }
       ]
     },
@@ -203,302 +149,192 @@
       "faIcon":"fa-store",
       "id": "STORE",
       "name": "stores",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
+      "color":"#DC3545",
+      "bgColor":"#F1AEB5",
       "displayName": "Stores",
       "description": "Store Level Reports on 360 demand vs the capacity to support & sustain it",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "stores.png",
-          "menuColor": "#feb901",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "CA Relationship",
+          "childId": "0",
+          "childGroup": "NMG",
           "childDisplayName": "CA Relationship",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Coming soon",
-          "parentName": "stores"
+          "description": "Coming soon"
         },
         {
-          "iconPath": "stores.png",
-          "menuColor": "#feb901",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "MVC Spend Band Dashboard",
+          "childId": "1",
+          "childGroup": "NMG",
           "childDisplayName": "MVC Spend Band Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Measure spend-band level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration.",
-          "parentName": "stores"
+          "description": "Measure spend-band level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration."
         },
         {
-          "iconPath": "stores.png",
-          "menuColor": "#feb901",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "MVC Store Dashboard",
+          "childId": "2",
+          "childGroup": "NMG",
           "childDisplayName": "MVC Store Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Measure store-level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration",
-          "parentName": "stores"
+          "description": "Measure store-level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration"
         },
         {
-          "iconPath": "stores.png",
-          "menuColor": "#feb901",
-          "childId": "NMG",
+          "childId": "3",
+          "childGroup": "NMG",
           "childName": "",
-          "childTooltip": "MVC Customer Dashboard",
           "childDisplayName": "MVC Customer Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
-          "description": "Audience Selection Tools for targeted marketing/events/offers and Customer Deep Dive for 1-1 customer strategy support",
-          "parentName": "stores"
+          "description": "Audience Selection Tools for targeted marketing/events/offers and Customer Deep Dive for 1-1 customer strategy support"
         },
         {
-          "iconPath": "stores.png",
-          "menuColor": "#feb901",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Associate Score Card",
+          "childId": "4",
+          "childGroup": "NMG",
           "childDisplayName": "Associate Score Card",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/relationship_ladder.png",
           "description": "Coming soon",
           "parentName": "stores"
         }
       ]
     },
     {
-      "icon": "business",
-      "menuColor": "#8e7cc3",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
-      "faIcon":"fa-bullhorn",
-      "iconPath": "marketing.png",
       "id": "MAR",
+      "color":"#FD7E14",
+      "bgColor":"#FECBA1",
+      "faIcon":"fa-bullhorn",
       "name": "marketing",
       "displayName": "Performance Marketing",
       "description": "All marketing related dashboards that help generate quality traffic for the appropriate selling channels & appropriate engagement channels at the appropriate times",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "marketing.png",
-          "menuColor": "#8e7cc3",
-          "childId": "BGB",
-          "childName": "BGB - New Customers",
-          "childTooltip": "BGB - New Customers",
+          "childGroup": "BGB",
+          "childId": "0",
           "childDisplayName": "BGB - New Customers",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/daily_online_market_summary.jpeg",
-          "description": "YoY and trends of new customers by acquisition channel, incuding division.",
-          "parentName": "marketing"
+          "description": "YoY and trends of new customers by acquisition channel, incuding division."
         }
       ]
     },
     {
-      "icon": "add_business",
       "faIcon":"fa-cart-shopping",
-      "menuColor": "#c30917",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
-      "iconPath": "merchant.png",
+      "color":"#0AA2C0",
+      "bgColor":"#9EEAF9",
       "id": "MER",
       "name": "merchant",
       "displayName": "Merchant",
       "description": "NM & BG Merchant planning & Operations, Brand Partnerships, Beauty, Jewelry & Replenishment Reports & Dashboards",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "OPD / NOW",
+          "childGroup": "NMG",
+          "childId": "0",
           "childDisplayName": "OPD - NOW Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/daily_online_market_summary.png",
-          "description": "This provides visibility for Executives and NM/BG coordinators that would help them obtain the metrics for Items which are not on web.",
-          "parentName": "merchant"
+          "description": "This provides visibility for Executives and NM/BG coordinators that would help them obtain the metrics for Items which are not on web."
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Item Lifecycle Report",
+          "childGroup": "NMG",
+          "childId": "1",
           "childDisplayName": "Item Lifecycle Report",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Aged On Hand",
+          "childGroup": "NMG",
+          "childId": "2",
           "childDisplayName": "Aged On Hand",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Brand Division and Brand Location",
+          "childGroup": "NMG",
+          "childId": "3",
           "childDisplayName": "Brand Division and Brand Location",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Case Card Items Retail over $20,000",
+          "childGroup": "NMG",
+          "childId": "4",
           "childDisplayName": "Case Card Items Retail over $20,000",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Certificate of Sale",
+          "childId": "5",
+          "childGroup": "NMG",
           "childDisplayName": "Certificate of Sale",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Cross Reference Report",
+          "childId": "6",
+          "childGroup": "NMG",
           "childDisplayName": "Cross Reference Report",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "On Hand Inventory Not in Cases",
+          "childGroup": "NMG",
+          "childId": "7",
           "childDisplayName": "On Hand Inventory Not in Cases",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Product History Report",
+          "childGroup": "NMG",
+          "childId": "8",
           "childDisplayName": "Product History Report",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         },
         {
-          "iconPath": "merchant.png",
-          "menuColor": "#c30917",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Serial Numbers by Vendor and Item",
+          "childId": "9",
+          "childGroup": "NMG",
           "childDisplayName": "Serial Numbers by Vendor and Item",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
-          "description": "coming soon",
-          "parentName": "merchant"
+          "description": "coming soon"
         }
       ]
     },
     {
-      "icon": "misc",
       "faIcon":"fa-users",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
-      "menuColor": "#004cff",
-      "iconPath": "cart.png",
+      "color":"#D63384",
+      "bgColor":"#EFADCE",
       "id": "PPPL_SER",
       "name": "people_service",
       "displayName": "People Services",
       "description": "Coming soon",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "cart.png",
-          "menuColor": "#004cff",
-          "childId": "NMG",
+          "childId": "0",
+          "childGroup": "NMG",
           "childName": "",
-          "childTooltip": "People Services:  Belonging",
           "childDisplayName": "People Services:  Belonging",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
           "description": "coming soon",
           "parentName": "product"
         },
         {
-          "iconPath": "cart.png",
-          "menuColor": "#004cff",
-          "childId": "NMG",
-          "childName": "",
-          "childTooltip": "Organizational Health Dashboard",
+          "childId": "1",
+          "childGroup": "NMG",
           "childDisplayName": "Organizational Health Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
           "description": "coming soon",
           "parentName": "product"
         }
       ]
     },
     {
-      "icon": "supplyChain",
       "faIcon":"fa-truck",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
-      "menuColor": "#00f701",
-      "iconPath": "supplyChain.png",
+      "color":"#6F42C1",
+      "bgColor":"#C5B3E6",
       "id": "SUPPLY_CHAIN",
       "name": "supply-chain",
       "displayName": "Supply Chain",
       "description": "All eCommerce logistics, Facilities/Warehouses, Operations and Supply Chain strategy related metrics & Dashboards ",
-      "parentRoute": "",
-      "doChildren": true,
       "children": [
         {
-          "iconPath": "supplyChain.png",
-          "menuColor": "#00f701",
-          "childId": "NMG",
+          "childId": "0",
+          "childGroup": "NMG",
           "childName": "",
-          "childTooltip": "Supply Chain Enterprise Dashboard",
           "childDisplayName": "Supply Chain Enterprise Dashboard",
           "url": "",
-          "imagePath": "../../../assets/images/dashboards/nm_bg_ca_relationship_dashboard.png",
           "description": "coming soon",
           "parentName": "supply-chain"
         }
