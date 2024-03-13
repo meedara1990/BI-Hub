@@ -3,10 +3,14 @@ import { DashboardDetailsComponent } from './dashboard-details/dashboard-details
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 
 export const routes: Routes = [
-  { path: '', title: 'Dashboard', component: MainDashboardComponent },
+  { path: '', title: 'Dashboard', component: MainDashboardComponent, },
   {
     path: 'dashboad-details',
     title: 'DashBoardDetails',
     component: DashboardDetailsComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];

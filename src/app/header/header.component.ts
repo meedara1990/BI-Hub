@@ -7,13 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
- 
-  isOpened: boolean=false;
+  isOpened: boolean = false;
 
-
-
-toggle(){
- this.isOpened=!this.isOpened;
+  toggle() {
+    this.isOpened = !this.isOpened;
   }
- 
 }

@@ -26,8 +26,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/asseets/nm_icon.ico",
+              "src/asseets/**",
+              "src/assets",
+              "src/nm_icon.ico"
             ],
             "styles": [
               "src/styles.scss",
@@ -91,8 +93,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/asseets/nm_icon.ico",
+              "src/asseets/**",
+              "src/assets",
+              "src/nm_icon.ico"
             ],
             "styles": [
               "src/styles.scss",

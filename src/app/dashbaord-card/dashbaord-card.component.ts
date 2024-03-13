@@ -10,10 +10,9 @@ import { Router } from '@angular/router';
   styleUrl: './dashbaord-card.component.scss'
 })
 export class DashbaordCardComponent {
-  constructor(private readonly router: Router) { }
+  constructor(private readonly router: Router) {}
   @Input() dashboard;
   onClick() {
     this.router.navigate(['/dashboad-details']);
-  
-}
+  }
 }
