@@ -1,4 +1,6 @@
-<div class="card-body">
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="card-body" role="grid" (click)="onClick()">
   <div class="d-flex flex-column bd-highlight mb-3" style="height: 200px">
     <div class="mb-auto">
       <div class="row">
@@ -24,12 +26,12 @@
             class="btn btn-sm"
             id="dropdownBasic1"
             ngbDropdownToggle>
-            NMG <span class="badge badge-light">0</span>
+            NMG <span class="badge badge-light">{{nmgChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+            <button ngbDropdownItem *ngFor="let item of nmgChildren">
+              {{item.childDisplayName}}
+            </button>
           </div>
         </div>
       </div>
@@ -40,12 +42,12 @@
             class="btn btn-sm"
             id="dropdownBasic1"
             ngbDropdownToggle>
-            NMB <span class="badge badge-light">2</span>
+            NMB <span class="badge badge-light">{{nmbChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+            <button ngbDropdownItem *ngFor="let item of nmbChildren">
+              {{item.childDisplayName}}
+            </button>
           </div>
         </div>
       </div>
@@ -56,12 +58,12 @@
             class="btn btn-sm"
             id="dropdownBasic1"
             ngbDropdownToggle>
-            BGB <span class="badge badge-light">3</span>
+            BGB <span class="badge badge-light">{{bgbChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+            <button ngbDropdownItem *ngFor="let item of bgbChildren">
+              {{item.childDisplayName}}
+            </button>
           </div>
         </div>
       </div>
