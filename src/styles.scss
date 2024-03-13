@@ -312,3 +312,7 @@ section{
   opacity: 1;
   
 }
+button:disabled {
+  background-color: #97929248;
+  cursor: not-allowed;
+ }
