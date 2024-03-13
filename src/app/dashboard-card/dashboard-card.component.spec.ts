@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashbaordCardComponent } from './dashbaord-card.component';
+import { DashbaordCardComponent } from './dashboard-card.component';
 
 describe('DashbaordCardComponent', () => {
   let component: DashbaordCardComponent;

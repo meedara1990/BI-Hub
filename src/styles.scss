@@ -312,7 +312,15 @@ section{
   opacity: 1;
   
 }
-button:disabled {
+button.disabled {
   background-color: #97929248;
   cursor: not-allowed;
  }
+ button.enabled{
+cursor: pointer;
+color: #0d6efd;
+ }
+ button.enabled span{
+  cursor: pointer;
+  color: #0d6efd!important;
+   }

@@ -5,11 +5,11 @@ import { Router } from '@angular/router';
 import { Dashboards } from '../types/responses/Dashboards';
 import { Dashboard } from '../types/responses/Dashboard';
 @Component({
-  selector: 'app-dashbaord-card',
+  selector: 'app-dashboard-card',
   standalone: true,
   imports: [CommonModule, NgbDropdownModule],
-  templateUrl: './dashbaord-card.component.html',
-  styleUrl: './dashbaord-card.component.scss'
+  templateUrl: './dashboard-card.component.html',
+  styleUrl: './dashboard-card.component.scss'
 })
 export class DashbaordCardComponent implements OnInit {
   constructor(private readonly router: Router) {}
