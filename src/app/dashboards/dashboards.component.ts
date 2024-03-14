@@ -13,7 +13,7 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 export class DashboardsComponent implements OnInit {
   @Input() id!: string;
   dashboard?: Dashboard;
-	active = 1;
+  active = 1;
   ngOnInit(): void {
     this.dashboard = history.state;
     console.log('Dashbaord', this.dashboard);

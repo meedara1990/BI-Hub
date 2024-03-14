@@ -25,8 +25,9 @@
             type="button"
             class="btn btn-sm"
             id="dropdownBasic1"
-            ngbDropdownToggle  [ngClass]="nmgChildren.length === 0 ? 'disabled' : 'enabled'">
-            NMG <span class="badge badge-light" >{{nmgChildren.length}}</span>
+            ngbDropdownToggle
+            [ngClass]="nmgChildren.length === 0 ? 'disabled' : 'enabled'">
+            NMG <span class="badge badge-light">{{nmgChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <button ngbDropdownItem *ngFor="let item of nmgChildren">
@@ -39,7 +40,8 @@
         <div ngbDropdown class="d-inline-block">
           <button
             type="button"
-            class="btn btn-sm" [ngClass]="nmbChildren.length === 0 ? 'disabled' : 'enabled'"
+            class="btn btn-sm"
+            [ngClass]="nmbChildren.length === 0 ? 'disabled' : 'enabled'"
             id="dropdownBasic1"
             ngbDropdownToggle>
             NMB <span class="badge badge-light">{{nmbChildren.length}}</span>
@@ -56,7 +58,8 @@
           <button
             type="button"
             class="btn btn-sm"
-            id="dropdownBasic1" [ngClass]="bgbChildren.length === 0 ? 'disabled' : 'enabled'"
+            id="dropdownBasic1"
+            [ngClass]="bgbChildren.length === 0 ? 'disabled' : 'enabled'"
             ngbDropdownToggle>
             BGB <span class="badge badge-light">{{bgbChildren.length}}</span>
           </button>

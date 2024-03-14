@@ -1,3 +1,5 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
   <div class="container-lg">
     <button
@@ -10,7 +12,7 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" target="_blank"  (click)="onClick()"
+    <a class="navbar-brand" target="_blank" (click)="onClick()"
       ><img
         src="../assets/neiman-marcus.svg"
         alt=""
@@ -44,11 +46,10 @@
         </form>
       </div>
       <div class="col-md-6 col-xs-12">
-        
         <ul class="navbar-nav navbar-right">
           <li class="nav-item dropdown">
             <button
-              class="dropbtn btn btn-primary dropdown-toggle-spli" 
+              class="dropbtn btn btn-primary dropdown-toggle-spli"
               type="button">
               Resources
               <!--<i class="fa fa-caret-down"></i>-->
