@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgbCollapseModule],
+  imports: [NgbDropdownModule],
   templateUrl: './header.component.html'
 })
 export class HeaderComponent {
