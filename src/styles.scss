@@ -92,15 +92,22 @@
 }
 
 .nav-tabs .nav-link {
-  background: none;
+  background: #cfe2ff4d;
   color: rgb(13, 110, 253);
   border: 1px solid rgb(13, 110, 253);
   border-radius: 4px;
   /* padding: 10px; */
   font-size: 14px;
   margin: 10px;
+  
 }
+.nav-tabs .nav-link:hover {
+  background: #cfe2ff4d;
+  color: rgb(13, 110, 253);
+  border: 1px solid rgb(13, 110, 253);
 
+  
+}
 .card-body {
   font-family: "Open Sans";
   padding-left: 5px;
@@ -208,6 +215,7 @@
 
 .navbar-right {
   float: right;
+  margin-top: 10px;
 }
 
 .dropdown-toggle:hover {
