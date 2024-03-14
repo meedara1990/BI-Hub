@@ -11,7 +11,7 @@ import { Dashboard } from '../types/responses/Dashboard';
   templateUrl: './dashboard-card.component.html',
   styleUrl: './dashboard-card.component.scss'
 })
-export class DashbaordCardComponent implements OnInit {
+export class DashboardCardComponent implements OnInit {
   constructor(private readonly router: Router) {}
   nmgChildren: Dashboards[] = [];
   nmbChildren: Dashboards[] = [];
