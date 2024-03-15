@@ -195,7 +195,10 @@
   padding-right: 5px;
   background-color: #fff;
 }
-
+.card-body .fa-solid, .fas {
+  font-weight: 900;
+  padding: 12px;
+}
 .card-text {
   font-size: 12px !important;
   line-height: 18px !important;
