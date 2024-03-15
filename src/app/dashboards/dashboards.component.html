@@ -3,69 +3,68 @@
     <div class="row g-4 pt-4 justify-content-center align-items-center">
       <div class="col">
         <h3 class="body-title" style="text-align: center">
-          eComm Management & Web Operations
+          {{dashboard?.displayName}}
         </h3>
         <p class="body-text" style="text-align: center">
-          eCommerce , Digital selling, Acquisition & Growth, Product Management
-          related Dashboards and metrices.
+          {{dashboard?.description}}
         </p>
       </div>
     </div>
     <div class="row">
       <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
         <li [ngbNavItem]="1">
-          <button ngbNavLink>NMG</button>
+          <button ngbNavLink>NMG - {{nmgChildren.length}}</button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
+                <div
+                  class="card rounded"
+                  style="width: 18rem"
+                  *ngFor="let item of nmgChildren">
+                  <app-dashboard-details
+                    [dashboard]="item"
+                    [color]="dashboard.color"
+                    [bgcolor]="dashboard.bgColor"
+                    [faIcon]="dashboard.faIcon"></app-dashboard-details>
                 </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-
               </div>
             </div>
           </ng-template>
         </li>
         <li [ngbNavItem]="2">
-          <button ngbNavLink>NMB</button>
+          <button ngbNavLink>NMB - {{nmbChildren.length}}</button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
+                <div
+                  class="card rounded"
+                  style="width: 18rem"
+                  *ngFor="let item of nmbChildren">
+                  <app-dashboard-details
+                    [dashboard]="item"
+                    [color]="dashboard.color"
+                    [bgcolor]="dashboard.bgColor"
+                    [faIcon]="dashboard.faIcon"></app-dashboard-details>
                 </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-
               </div>
             </div>
           </ng-template>
         </li>
         <li [ngbNavItem]="3">
-          <button ngbNavLink>BGB</button>
+          <button ngbNavLink>BGB - {{bgbChildren.length}}</button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
+                <div
+                  class="card rounded"
+                  style="width: 18rem"
+                  *ngFor="let item of bgbChildren">
+                  <app-dashboard-details
+                    [dashboard]="item"
+                    [color]="dashboard.color"
+                    [bgcolor]="dashboard.bgColor"
+                    [faIcon]="dashboard.faIcon"></app-dashboard-details>
                 </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-                <div class="card rounded" style="width: 18rem">
-                  <app-dashboard-details></app-dashboard-details>
-                </div>
-
               </div>
             </div>
           </ng-template>
