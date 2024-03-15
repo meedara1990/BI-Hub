@@ -1,17 +1,63 @@
-import { Component } from '@angular/core';
-import * as dashboards from '../../assets/dashboards.json';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
-import { BodyComponent } from '../body/body.component';
-import { MainDashboard } from '../types/responses/MainDashboard';
+import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 
 @Component({
-  selector: 'app-main-dashboard',
+  selector: 'app-autocomplete',
   standalone: true,
-  templateUrl: './main-dashboard.component.html',
-  styleUrl: './main-dashboard.component.scss',
-  imports: [CommonModule, DashboardCardComponent, BodyComponent]
+  templateUrl: './autocomplete.component.html',
+  styleUrl: './autocomplete.component.scss',
+  imports: [CommonModule, AutocompleteLibModule]
 })
-export class MainDashboardComponent {
+export class AutoCompleteComponent  implements OnInit{
  
+  
+  keyword = 'name';
+  
+  data = [
+     {
+       id: 1,
+       name: 'Dakota Gaylord PhD',
+       address: '14554 Smith Mews'
+     },
+     {
+       id: 2,
+       name: 'Maria Legros',
+       address: '002 Pagac Drives'
+     },
+     {
+       id: 3,
+       name: 'Brandyn Fritsch',
+       address: '8542 Lowe Mountain'
+     },
+     {
+       id: 4,
+       name: 'Glenna Ward V',
+       address: '1260 Oda Summit'
+     },
+     {
+       id: 5,
+       name: 'Jamie Veum',
+       address: '5017 Lowe Route'
+     }
+  ];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+ 
+  selectEvent(item) {
+    // do something with selected item
+  }
+ 
+  onChangeSearch(val: string) {
+    // fetch remote data from here
+    // And reassign the 'data' which is binded to 'data' property.
+  }
+  
+  onFocused(e){
+    // do something when input is focused
+  }
+
 }

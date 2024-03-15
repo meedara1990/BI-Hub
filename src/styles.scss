@@ -57,8 +57,62 @@
   font-display: swap;
 }
 
+.autocomplete-container .input-container input {
+  font-size: 14px;
+  box-sizing: none!important;
+  border: none!important;
+  box-shadow: none!important;
+  outline: none!important;
+  background: none!important;
+  color: #000000de;
+  width: 100%;
+  padding: 0px !important;
 
+  line-height: 10px;
+  height: 29px!important;
+  /* height: 40px; */
+}
+.ng-autocomplete .input-container{
+  margin-top: -3px;
+}
+.autocomplete-container .input-container input::-webkit-input-placeholder {
+  color:#fff;
+  }
+  .autocomplete-container .input-container input:-moz-placeholder { /* Firefox 18- */
+  color:#fff;
+  }
+  
+  .autocomplete-container .input-container input::-moz-placeholder { /* Firefox 19+ */
+  color:#fff;
+  }
+.autocomplete-container {
+  box-shadow:none!important;
+  position: relative;
+  overflow: visible;
+ 
+}
+.autocomplete-container .suggestions-container ul li {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 
+  line-height: 4px !important;
+  /* font-size: 12px !important; */
+}
+.autocomplete-container .suggestions-container ul li a{
+  font-size: 13px!important;
+}
+.autocomplete-container .suggestions-container ul li a:hover{
+ background-color: #0D6EFD;
+ color: #fff;
+ font-size: 13px;
+}
+.ng-autocomplete {
+  width: auto !important;
+  height: 35px;
+}
 .btn .badge {
   color: #000;
   position: relative;
@@ -89,6 +143,20 @@
 
 .navbar-brand {
   cursor: pointer;
+}
+
+.navbar-right {
+  float: right;
+  margin-top: 10px;
+}
+
+.nav-tabs {
+  width: 290px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px !important;
+  margin-top: 20px !important;
+  border: none
 }
 
 .nav-tabs .nav-link.active {
@@ -127,15 +195,6 @@
   line-height: 18px !important;
 }
 
-.nav-tabs {
-  width: 290px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 60px !important;
-  margin-top: 20px !important;
-  border: none
-}
-
 .card:hover {
   border: 2px solid #0d6efd;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -162,6 +221,14 @@
   font-family: "Open Sans";
 }
 
+
+
+.profile-icon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .dropdown-toggle-spli {
   color: #fff !important;
   font-size: 14px !important;
@@ -177,13 +244,6 @@
 
 .dropdown-toggle:hover {
   color: #fff !important;
-}
-
-
-.profile-icon {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .dropdown-item:hover {
@@ -225,10 +285,7 @@
   margin-right: auto;
 }
 
-.navbar-right {
-  float: right;
-  margin-top: 10px;
-}
+
 
 .dropdown-toggle:hover {
   background: none;
@@ -252,7 +309,17 @@
 section {
   padding: 85px 0;
 }
-
+.profile-head {
+  background-color: #ccc;
+  height: 53px;
+  margin-top: -8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.profile {
+  font-size: 27px;
+  margin-right: 10px;
+}
 .profile-box {
   margin-left: -85px;
   min-width: 210px;
@@ -322,33 +389,17 @@ section {
 
 }
 
-.profile-head {
-  background-color: #ccc;
-  height: 53px;
-  margin-top: -8px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
-
-.profile {
-  font-size: 27px;
-  margin-right: 10px;
-}
 
 #intro1 {
   background-color: #ededed;
 
 }
-
 .footer {
   background-color: #ededed;
 }
-
 .footer ul {
   margin: 0 auto;
 }
-
-
 .footer {
   font-size: 13px;
   //border-top: 1px solid #D5DCE5;
@@ -419,30 +470,33 @@ section {
   padding-left: .75rem;
   padding-right: .75rem;
 }
+
 .footer_sub-nav li:first-child {
   padding-left: 0;
 }
+
 .footer_sub-nav li a {
   font-size: 13px;
   display: block;
   color: #59626D;
   padding: .5rem 0;
 }
+
 .footer_sub-nav li a:hover,
 .footer_sub-nav li a:focus {
   color: #424951;
 }
+
 .custom-search {
   border: none;
   background: rgba(255, 255, 255, 0.5);
   left: 1px;
-
+  padding: 0x!important;
 }
 .custom-search::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #fff;
 }
-
 .custom-search:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
@@ -455,12 +509,14 @@ section {
   opacity: 1;
 
 }
+
 .btn.disabled {
   // background-color: #97929248;
   cursor: not-allowed;
   opacity: 0.3;
 
 }
+
 .btn.enabled {
   cursor: pointer;
   color: #0d6efd;
