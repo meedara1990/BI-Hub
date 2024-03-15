@@ -109,6 +109,7 @@
  color: #fff;
  font-size: 13px;
 }
+
 .nav-tabs .nav-link.active {
   background-color: #0d6efd!important;
   color: #fff!important;
@@ -217,6 +218,7 @@
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Open Sans";
+ // color: #3B3B3B;
 }
 
 .body-text {
@@ -224,10 +226,15 @@
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Open Sans";
+ // color: #686868;
 }
 
-
-
+.details .body-title{
+  color: #3B3B3B;
+}
+.details .body-text{
+  color: #686868;
+}
 .profile-icon {
   margin-left: auto;
   margin-right: auto;
