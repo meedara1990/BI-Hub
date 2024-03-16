@@ -389,7 +389,10 @@ section {
   background-color: #fff;
   min-height: 230px;
   max-height: 230px;
-  min-width: 312px;
+ // min-width: 312px;
+}
+.card:hover{
+  cursor: pointer;
 }
 .rounded{
   background-color: #fff;
