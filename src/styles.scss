@@ -243,6 +243,12 @@
 #intro2 .body-text{
   color: #686868;
 }
+#intro3 .body-title{
+  color: #0d6efd;
+}
+#intro3 .body-text{
+  color: #686868;
+}
 .profile-icon {
   margin-left: auto;
   margin-right: auto;
@@ -417,13 +423,10 @@ section {
 }
 
 
-#intro1 {
+#intro1,
+#intro2,
+#intro3 {
   background-color: #ededed;
-
-}
-#intro2 {
-  background-color: #ededed;
-
 }
 .footer {
   background-color: #ededed;
@@ -595,7 +598,6 @@ section {
   font-size: 14px;
 }
 .details-btn{
-
   border-radius: 6px;
   padding: 8px;
   background-color: rgb(13, 110, 253);
@@ -606,5 +608,6 @@ section {
   font-size: 14px;
   display: block;
   margin: 0 auto;
+  margin-bottom: 60px !important;
 
 }
