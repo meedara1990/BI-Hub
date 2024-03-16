@@ -237,10 +237,10 @@
   top: -6px !important;
   color: #fff !important;
 }
-.details .body-title{
+#intro2 .body-title{
   color: #3B3B3B;
 }
-.details .body-text{
+#intro2 .body-text{
   color: #686868;
 }
 .profile-icon {
@@ -387,8 +387,8 @@ section {
   border-radius: 3px;
   border: 3px solid #fff;
   background-color: #fff;
-  min-height: 230px;
-  max-height: 230px;
+  min-height: 180px;
+  //max-height: 230px;
  // min-width: 312px;
 }
 .card:hover{
@@ -416,6 +416,10 @@ section {
 
 
 #intro1 {
+  background-color: #ededed;
+
+}
+#intro2 {
   background-color: #ededed;
 
 }
