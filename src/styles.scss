@@ -305,7 +305,9 @@
   margin-right: auto;
 }
 
-
+.dropdown-toggle{
+  padding: 8px!important;
+}
 
 .dropdown-toggle:hover {
   background: none;
@@ -323,7 +325,7 @@
   margin-right: -18px;
   /* margin-top: 18px; */
   position: relative;
-  top: 8px;
+  top: 6px;
 }
 
 section {
@@ -545,10 +547,24 @@ section {
   opacity: 0.3;
 
 }
+.p-2{
+  padding: 0px !important;
 
+}
 .btn.enabled {
   cursor: pointer;
   color: #0d6efd;
+    /* padding: 10px; */
+    border-radius: 0px;
+ width: 100%;
+ //background: red;
+ margin-bottom: 0px;
+}
+.btn.enabled:hover{
+  background-color: rgb(158, 197, 254);
+}
+.d-inline-block{
+  width: 100%!important;
 }
 
 .btn.enabled span {
