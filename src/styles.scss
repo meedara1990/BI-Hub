@@ -594,7 +594,7 @@ section {
   z-index: 9;
 }
 .nav-tabs .nav-link{
-  width: 65px;
+  width: 60px;
   font-size: 14px;
 }
 .details-btn{
@@ -604,10 +604,17 @@ section {
   color: rgb(255, 255, 255);
   border: 1px solid rgb(13, 110, 253);
   text-align: center;
-  width: 55px;
+  width: 50px;
   font-size: 14px;
   display: block;
   margin: 0 auto;
   margin-bottom: 60px !important;
+
+}
+.details-btn .button__badge{
+
+  top: -20px;
+  left: 1px;
+  z-index: 9;
 
 }
