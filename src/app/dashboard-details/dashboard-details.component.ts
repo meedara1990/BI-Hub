@@ -20,6 +20,9 @@ export class DashboardDetailsComponent {
   constructor(private readonly router: Router) {}
 
   onClick() {
-    this.router.navigate(['/dashboads']);
+    this.router.navigate(['/dashboards-content-details'], {
+      state: this.dashboard
+    });
+    
   }
 }
