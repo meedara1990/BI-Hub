@@ -13,7 +13,8 @@
     <div class="row">
       <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
         <li [ngbNavItem]="1">
-          <button ngbNavLink>NMG - {{nmgChildren.length}}</button>
+          
+          <button ngbNavLink>NMG<span class="button__badge">{{nmgChildren.length}}</span></button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">
@@ -26,7 +27,7 @@
           </ng-template>
         </li>
         <li [ngbNavItem]="2">
-          <button ngbNavLink>NMB - {{nmbChildren.length}}</button>
+          <button ngbNavLink>NMB<span class="button__badge">{{nmbChildren.length}}</span></button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">
@@ -39,7 +40,7 @@
           </ng-template>
         </li>
         <li [ngbNavItem]="3">
-          <button ngbNavLink>BGB - {{bgbChildren.length}}</button>
+          <button ngbNavLink>BGB<span class="button__badge">{{bgbChildren.length}}</span></button>
           <ng-template ngbNavContent>
             <div class="container-lg">
               <div class="row g-5 justify-content-center align-items-center">

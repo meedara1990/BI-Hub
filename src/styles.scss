@@ -325,7 +325,7 @@
   margin-right: -18px;
   /* margin-top: 18px; */
   position: relative;
-  top: 6px;
+  top: 5px;
 }
 
 section {
@@ -570,5 +570,26 @@ section {
 .btn.enabled span {
   cursor: pointer;
   color: #0d6efd !important;
+}
+.button {
+  color: white;
+  display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative; /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px; /* Add some padding so it looks nice */
+}
 
+/* Make the badge float in the top right corner of the button */
+.button__badge {
+  background-color: #dc3545;
+  border-radius: 14px;
+  color: white;
+  padding: 0px 5px;
+  font-size: 12px;
+  position: relative;
+  top: -22px;
+  left: 8px;
+  z-index: 9999;
+}
+.nav-tabs .nav-link{
+  width: 65px;
 }
