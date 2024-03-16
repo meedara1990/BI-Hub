@@ -588,8 +588,23 @@ section {
   position: relative;
   top: -22px;
   left: 8px;
-  z-index: 9999;
+  z-index: 9;
 }
 .nav-tabs .nav-link{
   width: 65px;
+  font-size: 14px;
+}
+.details-btn{
+
+  border-radius: 6px;
+  padding: 8px;
+  background-color: rgb(13, 110, 253);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(13, 110, 253);
+  text-align: center;
+  width: 55px;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+
 }
