@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -9,10 +9,6 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './dashboards.content.component.html',
   styleUrl: './dashboards.content.component.scss'
 })
-export class DashboardsContentComponent implements OnInit {
+export class DashboardsContentComponent {
   active = 1;
-
-  ngOnInit(): void {
-    
-  }
 }

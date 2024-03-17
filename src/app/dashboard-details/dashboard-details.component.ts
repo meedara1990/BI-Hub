@@ -23,6 +23,5 @@ export class DashboardDetailsComponent {
     this.router.navigate(['/dashboards-content-details'], {
       state: this.dashboard
     });
-    
   }
 }

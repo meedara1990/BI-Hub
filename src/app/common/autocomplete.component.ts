@@ -47,15 +47,14 @@ export class AutoCompleteComponent implements OnInit {
   }
 
   selectEvent(item) {
-    // do something with selected item
+    console.log('item', item);
   }
 
   onChangeSearch(val: string) {
-    // fetch remote data from here
-    // And reassign the 'data' which is binded to 'data' property.
+    console.log('val', val);
   }
 
   onFocused(e) {
-    // do something when input is focused
+    console.log('e', e);
   }
 }
