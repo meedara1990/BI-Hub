@@ -57,8 +57,71 @@
   font-display: swap;
 }
 
+.autocomplete-container .input-container input {
+  font-size: 14px;
+  box-sizing: none!important;
+  border: none!important;
+  box-shadow: none!important;
+  outline: none!important;
+  background: none!important;
+  color: #fff!important;
+  width: 100%;
+  padding: 0px !important;
 
+  line-height: 10px;
+  height: 29px!important;
+  /* height: 40px; */
+}
+.ng-autocomplete .input-container{
+  margin-top: -3px;
+}
+.autocomplete-container .input-container input::-webkit-input-placeholder {
+  color:#fff;
+  }
+  .autocomplete-container .input-container input:-moz-placeholder { /* Firefox 18- */
+  color:#fff;
+  }
+  
+  .autocomplete-container .input-container input::-moz-placeholder { /* Firefox 19+ */
+  color:#fff;
+  }
+.autocomplete-container {
+  box-shadow:none!important;
+  position: relative;
+  overflow: visible;
+ 
+}
+.autocomplete-container .suggestions-container ul li {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 
+  line-height: 4px !important;
+  /* font-size: 12px !important; */
+}
+.autocomplete-container .suggestions-container ul li a{
+  font-size: 13px!important;
+}
+.autocomplete-container .suggestions-container ul li a:hover{
+ background-color: #0D6EFD;
+ color: #fff;
+ font-size: 13px;
+}
+.navbar-brand img{
+  position: relative;
+    top: -5px;
+}
+.nav-tabs .nav-link.active {
+  background-color: #0d6efd!important;
+  color: #fff!important;
+  border: 1px solid #0d6efd!important;
+}
+.ng-autocomplete {
+  width: auto !important;
+  height: 35px;
+}
 .btn .badge {
   color: #000;
   position: relative;
@@ -91,6 +154,20 @@
   cursor: pointer;
 }
 
+.navbar-right {
+  float: right;
+  margin-top: 10px;
+}
+
+.nav-tabs {
+  //width: 260px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px !important;
+  margin-top: 20px !important;
+  border: none
+}
+
 .nav-tabs .nav-link.active {
   background-color: #0d6efd;
   color: #fff;
@@ -121,19 +198,13 @@
   padding-right: 5px;
   background-color: #fff;
 }
-
+.card-body .fa-solid, .fas {
+  font-weight: 900;
+  padding: 12px;
+}
 .card-text {
   font-size: 12px !important;
   line-height: 18px !important;
-}
-
-.nav-tabs {
-  width: 290px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 60px !important;
-  margin-top: 20px !important;
-  border: none
 }
 
 .card:hover {
@@ -153,6 +224,7 @@
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Open Sans";
+ // color: #3B3B3B;
 }
 
 .body-text {
@@ -160,6 +232,30 @@
   padding-left: 15px;
   padding-right: 15px;
   font-family: "Open Sans";
+ // color: #686868;
+}
+.material-icons
+{
+  position: relative;
+  top: -6px !important;
+  color: #fff !important;
+}
+#intro2 .body-title{
+  color: #3B3B3B;
+}
+#intro2 .body-text{
+  color: #686868;
+}
+#intro3 .body-title{
+  color: #0d6efd;
+}
+#intro3 .body-text{
+  color: #686868;
+}
+.profile-icon {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .dropdown-toggle-spli {
@@ -177,13 +273,6 @@
 
 .dropdown-toggle:hover {
   color: #fff !important;
-}
-
-
-.profile-icon {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
 }
 
 .dropdown-item:hover {
@@ -225,9 +314,8 @@
   margin-right: auto;
 }
 
-.navbar-right {
-  float: right;
-  margin-top: 10px;
+.dropdown-toggle{
+  padding: 8px!important;
 }
 
 .dropdown-toggle:hover {
@@ -246,13 +334,23 @@
   margin-right: -18px;
   /* margin-top: 18px; */
   position: relative;
-  top: 8px;
+  top: 5px;
 }
 
 section {
   padding: 85px 0;
 }
-
+.profile-head {
+  background-color: #ccc;
+  height: 53px;
+  margin-top: -8px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.profile {
+  font-size: 27px;
+  margin-right: 10px;
+}
 .profile-box {
   margin-left: -85px;
   min-width: 210px;
@@ -300,11 +398,17 @@ section {
   border-radius: 3px;
   border: 3px solid #fff;
   background-color: #fff;
-  min-height: 230px;
-  max-height: 230px;
-  min-width: 312px;
+  min-height: 180px;
+  margin-bottom: 20px;
+  //max-height: 230px;
+ // min-width: 312px;
 }
-
+.card:hover{
+  cursor: pointer;
+}
+.rounded{
+  background-color: #fff;
+}
 .first-row {
   position: relative;
   top: -80px;
@@ -322,36 +426,20 @@ section {
 
 }
 
-.profile-head {
-  background-color: #ccc;
-  height: 53px;
-  margin-top: -8px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-}
 
-.profile {
-  font-size: 27px;
-  margin-right: 10px;
-}
-
-#intro1 {
+#intro1,
+#intro2,
+#intro3 {
   background-color: #ededed;
-
 }
-
 .footer {
   background-color: #ededed;
 }
-
 .footer ul {
   margin: 0 auto;
 }
-
-
 .footer {
   font-size: 13px;
-  //border-top: 1px solid #D5DCE5;
   font-family: "Open Sans";
   color: #59626D;
 }
@@ -363,6 +451,7 @@ section {
 
 .footer p {
   color: #000;
+  text-align: center;
 }
 
 .footer-inner {
@@ -419,30 +508,33 @@ section {
   padding-left: .75rem;
   padding-right: .75rem;
 }
+
 .footer_sub-nav li:first-child {
   padding-left: 0;
 }
+
 .footer_sub-nav li a {
   font-size: 13px;
   display: block;
   color: #59626D;
   padding: .5rem 0;
 }
+
 .footer_sub-nav li a:hover,
 .footer_sub-nav li a:focus {
   color: #424951;
 }
+
 .custom-search {
   border: none;
   background: rgba(255, 255, 255, 0.5);
   left: 1px;
-
+  padding: 0x!important;
 }
 .custom-search::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #fff;
 }
-
 .custom-search:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #fff;
@@ -455,19 +547,83 @@ section {
   opacity: 1;
 
 }
+
 .btn.disabled {
   // background-color: #97929248;
   cursor: not-allowed;
   opacity: 0.3;
 
 }
+.p-2{
+  padding: 0px !important;
+
+}
 .btn.enabled {
   cursor: pointer;
   color: #0d6efd;
+    /* padding: 10px; */
+    border-radius: 0px;
+ width: 100%;
+ //background: red;
+ margin-bottom: 0px;
+}
+.btn.enabled:hover{
+  background-color: rgb(158, 197, 254);
+}
+.d-inline-block{
+  width: 100%!important;
 }
 
 .btn.enabled span {
   cursor: pointer;
   color: #0d6efd !important;
+}
+.button {
+  color: white;
+  display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative; /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px; /* Add some padding so it looks nice */
+}
 
+/* Make the badge float in the top right corner of the button */
+.button__badge {
+  background-color: rgb(220, 53, 69);
+  border-radius: 23px;
+  color: white;
+  padding: 2px 6px;
+  font-size: 11px;
+  position: relative;
+  top: -22px;
+  left: 5px;
+  z-index: 9;
+}
+.nav-tabs .nav-link{
+  width: 60px;
+  font-size: 14px;
+}
+.details-btn{
+  border-radius: 6px;
+  padding: 8px;
+  background-color: rgb(13, 110, 253);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(13, 110, 253);
+  text-align: center;
+  width: 50px;
+  font-size: 14px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 60px !important;
+
+}
+.details-btn .button__badge{
+
+  top: -20px;
+  left: 1px;
+  z-index: 9;
+
+}
+.cards-section{
+  border-bottom: 1px solid #ccc;
+    /* margin-top: 36px; */
+    padding-bottom: 20px;
 }

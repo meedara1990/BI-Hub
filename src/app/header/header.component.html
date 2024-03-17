@@ -1,74 +1,133 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
   <div class="container-lg">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" target="_blank" (click)="onClick()"><img src="../assets/neiman-marcus.svg" alt=""
-        width="100" height="24" />BI Hub</a>
+    <a class="navbar-brand" target="_blank" (click)="onClick()"
+      ><img
+        src="../assets/neiman-marcus.svg"
+        alt=""
+        width="100"
+        height="35" /> <span>BI Hub</span></a
+    >
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="col-md-6 col-xs-12">
-        <form>
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
-                </path>
-              </svg>
-            </span>
-            <input type="text" class="form-control custom-search" placeholder="Search for anything"
-              aria-label="Input group example" aria-describedby="basic-addon1" />
-          </div>
-        </form>
+      <div class="col-md-2 col-xs-12"></div>
+      <div class="col-md-5 col-xs-12">
+        <app-autocomplete></app-autocomplete>
       </div>
-      <div class="col-md-6 col-xs-12">
+      <div class="col-md-5 col-xs-12">
         <ul class="navbar-nav navbar-right">
           <li class="nav-item dropdown">
             <div ngbDropdown class="d-inline-block">
-              <button type="button" class="dropbtn btn btn-primary dropdown-toggle-spli" id="dropdownBasic1"
+              <button
+                type="button"
+                class="dropbtn btn btn-primary dropdown-toggle-spli"
+                id="dropdownBasic1"
                 ngbDropdownToggle>
                 Resources
               </button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-option">
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem>
-                  What is BI Portal</a>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem>Help & Documentation</a>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem>Knowledge Base</a>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem>Open a Support Ticket</a>
+              <div
+                ngbDropdownMenu
+                aria-labelledby="dropdownBasic1"
+                class="dropdown-option">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem>
+                  What is BI Portal</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem
+                  >Help & Documentation</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem
+                  >Knowledge Base</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem
+                  >Open a Support Ticket</a
+                >
               </div>
             </div>
           </li>
           <li class="nav-item dropdown">
             <div ngbDropdown class="d-inline-block">
-              <button type="button" class="dropbtn btn btn-primary dropdown-toggle-spli" id="dropdownBasic2"
+              <button
+                type="button"
+                class="dropbtn btn btn-primary dropdown-toggle-spli"
+                id="dropdownBasic2"
                 ngbDropdownToggle>
                 Contact Us
               </button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic2" class="dropdown-option">
-                 <a target="_blank" href="https://www.google.com/" ngbDropdownItem><i class="fa fa-comment"></i>&nbsp;&nbsp;link to teams</a>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem><i class="fa fa-envelope"></i>&nbsp;&nbsp;Email Us</a>
+              <div
+                ngbDropdownMenu
+                aria-labelledby="dropdownBasic2"
+                class="dropdown-option">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem
+                  ><i class="fa fa-comment"></i>&nbsp;&nbsp;link to teams</a
+                >
+                <a
+                  target="_blank"
+                  href="https://www.google.com/"
+                  ngbDropdownItem
+                  ><i class="fa fa-envelope"></i>&nbsp;&nbsp;Email Us</a
+                >
+              </div>
             </div>
-            </div>  
           </li>
           <li class="nav-item dropdown">
             <div ngbDropdown class="d-inline-block">
-              <button type="button" class="dropbtn btn btn-primary dropdown-toggle-spli" id="dropdownBasic3"
+              <button
+                type="button"
+                class="dropbtn btn btn-primary dropdown-toggle-spli"
+                id="dropdownBasic3"
                 ngbDropdownToggle>
                 <i class="fa-solid fa-circle-user profile"></i>
                 <i class="fa fa-angle-down"></i>
               </button>
-              <div ngbDropdownMenu aria-labelledby="dropdownBasic3" class="profile-box">
+              <div
+                ngbDropdownMenu
+                aria-labelledby="dropdownBasic3"
+                class="profile-box">
                 <div class="profile-head"></div>
                 <i class="fa fa-circle-user profile-icon"></i>
                 <div class="profile-content">
-                <h3>Jake Peters</h3>
-                <p>jake&#64;iamjakepeters.com</p>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem><i class="fa fa-sheet-plastic"></i>&nbsp;&nbsp;Intake Form</a>
-                <a target="_blank" href="https://www.google.com/" ngbDropdownItem><i
-                    class="fa fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Logout</a>
-              </div>
+                  <h3>Jake Peters</h3>
+                  <p>jake&#64;iamjakepeters.com</p>
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/"
+                    ngbDropdownItem
+                    ><i class="fa fa-sheet-plastic"></i>&nbsp;&nbsp;Intake
+                    Form</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://www.google.com/"
+                    ngbDropdownItem
+                    ><i class="fa fa-arrow-right-from-bracket"></i
+                    >&nbsp;&nbsp;Logout</a
+                  >
+                </div>
               </div>
             </div>
           </li>

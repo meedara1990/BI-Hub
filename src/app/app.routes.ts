@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { DashboardsComponent } from './dashboards/dashboards.component';
 import { DashboardDetailsComponent } from './dashboard-details/dashboard-details.component';
+import { DashboardsContentComponent } from './dashboards-content/dashboards.content.component';
 
 export const routes: Routes = [
   {
@@ -11,14 +12,19 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'dashboads/:id',
+    path: 'dashboards/:id',
     title: 'Dashboards',
     component: DashboardsComponent
   },
   {
-    path: 'dashboad-details/:id',
-    title: 'DashBoardDetails',
+    path: 'dashboard-details/:id',
+    title: 'DashboardDetails',
     component: DashboardDetailsComponent
+  },
+  {
+    path: 'dashboards-content-details',
+    title: 'DashboardContentsDetails',
+    component: DashboardsContentComponent
   },
   {
     path: '**',

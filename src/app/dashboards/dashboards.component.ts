@@ -2,9 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { Dashboard } from '../types/responses/Dashboard';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import * as dashboards from '../../assets/dashboards.json';
-import { MainDashboard } from '../types/responses/MainDashboard';
 import { DashboardDetailsComponent } from '../dashboard-details/dashboard-details.component';
+import { Dashboards } from '../types/responses/Dashboards';
 
 @Component({
   selector: 'app-dashboards',
@@ -15,12 +14,23 @@ import { DashboardDetailsComponent } from '../dashboard-details/dashboard-detail
 })
 export class DashboardsComponent implements OnInit {
   @Input() id!: string;
-  dashboard?: Dashboard;
+  dashboard!: Dashboard;
   active = 1;
-  public mainDashboard: MainDashboard = dashboards;
+  nmgChildren: Dashboards[] = [];
+  nmbChildren: Dashboards[] = [];
+  bgbChildren: Dashboards[] = [];
+
   ngOnInit(): void {
     this.dashboard = history.state;
     console.log('Dashbaord', this.dashboard);
+    this.nmgChildren = this.dashboard.children.filter(
+      (dashboard) => dashboard.childGroup === 'NMG'
+    );
+    this.nmbChildren = this.dashboard.children.filter(
+      (dashboard) => dashboard.childGroup === 'NMB'
+    );
+    this.bgbChildren = this.dashboard.children.filter(
+      (dashboard) => dashboard.childGroup === 'BGB'
+    );
   }
-  
 }

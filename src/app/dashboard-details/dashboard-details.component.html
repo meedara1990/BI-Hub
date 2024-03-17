@@ -1,22 +1,20 @@
-<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
-<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <div class="card-body" role="grid">
-    <div class="d-flex flex-column bd-highlight mb-3" style="height: 200px">
-      <div class="mb-auto" (click)="onClick()">
-        <div class="row">
-          <div class="col-sm-9">
-            <h5 class="card-title">Customer/CRM</h5>
-            <p class="card-text">NM & BG Customer related dashboards & metrics like Client Advisor relationships, Customer Trips, Customer Segmentation & Sales</p>
-          </div>
-          <div class="col-sm-3 text-right">
-            <span style="font-size: 2em;color: rgb(13, 110, 253);">
-              <i
-                class="fa-solid fa-border border fa-chart-line" style="background: rgb(158, 197, 254);"
-               ></i>
-            </span>
-          </div>
+  <div class="d-flex flex-column bd-highlight mb-3" style="height: 160px">
+    <div class="mb-auto" (click)="onClick()">
+      <div class="row">
+        <div class="col-sm-9">
+          <h5 class="card-title">{{dashboard.childDisplayName}}</h5>
+          <p class="card-text">{{dashboard.description}}</p>
+        </div>
+        <div class="col-sm-3 text-right">
+          <span style="font-size: 2em" [ngStyle]="{'color': color}">
+            <i
+              class="fa-solid fa-border border"
+              [class]="faIcon"
+              [ngStyle]="{'background': bgcolor}"></i>
+          </span>
         </div>
       </div>
-     
     </div>
   </div>
+</div>
