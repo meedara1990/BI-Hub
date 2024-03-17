@@ -1,7 +1,10 @@
-<!-- navbar -->
-<app-header></app-header>
-
-<router-outlet></router-outlet>
-
-<!-- footer -->
-<app-footer></app-footer>
+<div *ngIf="isLoggedIn">
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
+</div>
+<div class="d-flex justify-content-center" *ngIf="!isLoggedIn">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
