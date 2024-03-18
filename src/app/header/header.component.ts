@@ -30,4 +30,8 @@ export class HeaderComponent implements OnInit {
     localStorage.clear();
     window.open(environment.awsSingleSignOut, '_self');
   }
+
+  linktosupportEmail() {
+    window.open('mailto:me@example.com', '_self');
+  }
 }

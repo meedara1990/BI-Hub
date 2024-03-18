@@ -30,7 +30,10 @@
             NMG <span class="badge badge-light">{{nmgChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem *ngFor="let item of nmgChildren">
+            <button
+              ngbDropdownItem
+              *ngFor="let item of nmgChildren"
+              (click)="openChildDashboard(item)">
               {{item.childDisplayName}}
             </button>
           </div>

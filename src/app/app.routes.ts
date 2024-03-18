@@ -2,12 +2,12 @@ import { Routes } from '@angular/router';
 import { MainDashboardComponent } from './main-dashboard/main-dashboard.component';
 import { DashboardsComponent } from './dashboards/dashboards.component';
 import { DashboardDetailsComponent } from './dashboard-details/dashboard-details.component';
-import { DashboardsContentComponent } from './dashboards-content/dashboards.content.component';
+import { DashboardSearchComponent } from './dashboard-search/dashboard-search.component';
 
 export const routes: Routes = [
   {
     path: '',
-    title: 'Dashboard',
+    title: 'Main Dashboard',
     component: MainDashboardComponent,
     pathMatch: 'full'
   },
@@ -22,9 +22,9 @@ export const routes: Routes = [
     component: DashboardDetailsComponent
   },
   {
-    path: 'dashboards-content-details',
-    title: 'DashboardContentsDetails',
-    component: DashboardsContentComponent
+    path: 'dashboards-search',
+    title: 'DashboardSearch',
+    component: DashboardSearchComponent
   },
   {
     path: '**',

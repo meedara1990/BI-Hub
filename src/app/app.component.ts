@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
 import { AuthService } from './auth.service';
 import { UserService } from './user.service';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -70,14 +71,22 @@ export class AppComponent implements OnInit {
   }
 
   populateUserInfo(accessToken: string) {
-    this.authService.getUserInfo(accessToken).subscribe((response: any) => {
-      console.log(response);
-      localStorage.setItem(
-        AppConstants.AWS.USER_PROFILE,
-        JSON.stringify(response)
-      );
-      this.userService.setUser();
-    });
+    this.authService.getUserInfo(accessToken).subscribe(
+      (response: any) => {
+        console.log(response);
+        localStorage.setItem(
+          AppConstants.AWS.USER_PROFILE,
+          JSON.stringify(response)
+        );
+        this.userService.setUser();
+      },
+      (error: HttpErrorResponse) => {
+        console.log('Get profileInfo Error', error);
+        if (error.status === 401) {
+          this.redirectFOrAUthentication();
+        }
+      }
+    );
   }
 
   ngOnInit(): void {
@@ -95,11 +104,15 @@ export class AppComponent implements OnInit {
     const accessToken = localStorage.getItem(AppConstants.AWS.ACCESS_TOKEN);
     if (isAWSCode == null || accessToken == null) {
       console.log('called checkAuthentication clearing cache');
-      localStorage.clear();
-      this.isLoggedIn = false;
-      window.open(environment.awsAuthorizeURL, '_self');
+      this.redirectFOrAUthentication();
     } else {
       this.populateUserAuthentication();
     }
+  }
+
+  private redirectFOrAUthentication() {
+    localStorage.clear();
+    this.isLoggedIn = false;
+    window.open(environment.awsAuthorizeURL, '_self');
   }
 }

@@ -36,4 +36,5 @@ export class DashboardCardComponent implements OnInit {
       state: this.dashboard
     });
   }
+  openChildDashboard(childDashboard: Dashboards) {}
 }
