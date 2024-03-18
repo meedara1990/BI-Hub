@@ -9,11 +9,11 @@
           <p class="card-text">{{dashboard.description}}</p>
         </div>
         <div class="col-sm-3 text-right">
-          <span style="font-size: 2em" [ngStyle]="{'color': dashboard.bgColor}">
+          <span style="font-size: 2em" [ngStyle]="{'color': dashboard.color}">
             <i
               class="fa-solid fa-border border"
               [class]="dashboard.faIcon"
-              [ngStyle]="{'background': dashboard.color}"></i>
+              [ngStyle]="{'background': dashboard.bgColor}"></i>
           </span>
         </div>
       </div>

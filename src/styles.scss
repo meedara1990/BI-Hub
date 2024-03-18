@@ -56,6 +56,10 @@
   font-style: normal;
   font-display: swap;
 }
+.appname{
+  font-weight: 600;
+  font-size: 32px;
+}
 
 .autocomplete-container .input-container input {
   font-size: 14px;
@@ -81,7 +85,7 @@
   .autocomplete-container .input-container input:-moz-placeholder { /* Firefox 18- */
   color:#fff;
   }
-  
+
   .autocomplete-container .input-container input::-moz-placeholder { /* Firefox 19+ */
   color:#fff;
   }
@@ -89,7 +93,7 @@
   box-shadow:none!important;
   position: relative;
   overflow: visible;
- 
+
 }
 .autocomplete-container .suggestions-container ul li {
   position: relative;
@@ -213,26 +217,32 @@
 }
 
 .card-title {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card-text {
   font-size: 12px;
+  font-weight: 400;
+  color: #686868;
 }
 
 .body-title {
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 32px;
   font-family: "Open Sans";
- // color: #3B3B3B;
+  font-weight: 700;
 }
 
 .body-text {
   margin: 0px;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 16px;
   font-family: "Open Sans";
- // color: #686868;
+  font-weight: 400;
+  color: #ABCFFB;
 }
 .material-icons
 {

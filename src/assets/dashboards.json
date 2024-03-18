@@ -5,8 +5,8 @@
       "displayName": "NMG KPIs",
       "description": "Executive Dashboards for Board, GLT & SLT members",
       "faIcon":"fa-chart-line",
-      "color":"#9EC5FE",
-      "bgColor":"#0D6EFD",
+      "color":"#0D6EFD",
+      "bgColor":"#9EC5FE",
       "children": [
         {
           "childId":"0",

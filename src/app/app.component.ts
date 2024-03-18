@@ -9,6 +9,7 @@ import { AppConstants } from './app.constants';
 import { environment } from '../environments/environment';
 import { CommonModule } from '@angular/common';
 import { AuthService } from './auth.service';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -28,54 +29,77 @@ import { AuthService } from './auth.service';
 export class AppComponent implements OnInit {
   isLoggedIn: boolean = false;
 
-  constructor(private authService: AuthService) {
+  constructor(
+    private authService: AuthService,
+    private userService: UserService
+  ) {
+    console.log('app component constructor called');
     const redirectedUrl = window.location.href;
-    const accessToken = localStorage.getItem(AppConstants.AWS.ACCESS_TOKEN);
     if (redirectedUrl.includes(AppConstants.AWS.CODE) == true) {
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const code = urlParams.get(AppConstants.AWS.CODE);
       if (code) {
         localStorage.setItem(AppConstants.AWS.CODE, code);
-
-        if (!accessToken) {
-          this.authService.getAuthToken(code).subscribe((response: any) => {
-            console.log('response', response);
-            localStorage.setItem(
-              AppConstants.AWS.ACCESS_TOKEN,
-              response.access_token
-            );
-
-            this.authService
-              .getUserInfo(response.access_token)
-              .subscribe((response: any) => {
-                console.log(response);
-                localStorage.setItem(
-                  AppConstants.AWS.USER_PROFILE,
-                  JSON.stringify(response)
-                );
-                // this.userService.setUser();
-              });
-          });
-        }
+        this.populateUserAuthentication();
       }
     }
   }
 
+  private populateUserAuthentication() {
+    console.log('called user auth check');
+    const code = localStorage.getItem(AppConstants.AWS.CODE);
+    const accessToken = localStorage.getItem(AppConstants.AWS.ACCESS_TOKEN);
+    if (code && !accessToken) {
+      this.authService.getAuthToken(code).subscribe((response: any) => {
+        console.log('Auth response', response);
+        localStorage.setItem(
+          AppConstants.AWS.ACCESS_TOKEN,
+          response.access_token
+        );
+        this.populateUserInfo(response.access_token);
+        this.isLoggedIn = true;
+      });
+    } else if (accessToken != null) {
+      this.populateUserInfo(accessToken);
+      this.isLoggedIn = true;
+    } else {
+      console.log('User Auth Code is Empty');
+      this.isLoggedIn = false;
+    }
+  }
+
+  populateUserInfo(accessToken: string) {
+    this.authService.getUserInfo(accessToken).subscribe((response: any) => {
+      console.log(response);
+      localStorage.setItem(
+        AppConstants.AWS.USER_PROFILE,
+        JSON.stringify(response)
+      );
+      this.userService.setUser();
+    });
+  }
+
   ngOnInit(): void {
+    console.log('check app component onInit');
     this.checkAuthentication();
   }
 
   checkAuthentication() {
-    console.log('called checkAuthentication');
+    console.log(
+      'called checkAuthentication from app component ',
+      localStorage.getItem(AppConstants.AWS.CODE),
+      localStorage.getItem(AppConstants.AWS.ACCESS_TOKEN)
+    );
     const isAWSCode = localStorage.getItem(AppConstants.AWS.CODE);
-    if (isAWSCode == null) {
+    const accessToken = localStorage.getItem(AppConstants.AWS.ACCESS_TOKEN);
+    if (isAWSCode == null || accessToken == null) {
+      console.log('called checkAuthentication clearing cache');
       localStorage.clear();
       this.isLoggedIn = false;
       window.open(environment.awsAuthorizeURL, '_self');
     } else {
-      this.isLoggedIn = true;
-      console.log('isAWSCode', isAWSCode);
+      this.populateUserAuthentication();
     }
   }
 }
