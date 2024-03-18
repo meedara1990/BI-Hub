@@ -50,7 +50,10 @@
             NMB <span class="badge badge-light">{{nmbChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-            <button ngbDropdownItem *ngFor="let item of nmbChildren">
+            <button
+              ngbDropdownItem
+              *ngFor="let item of nmbChildren"
+              (click)="openChildDashboard(item)">
               {{item.childDisplayName}}
             </button>
           </div>
@@ -67,7 +70,10 @@
             BGB <span class="badge badge-light">{{bgbChildren.length}}</span>
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
-            <button ngbDropdownItem *ngFor="let item of bgbChildren">
+            <button
+              ngbDropdownItem
+              *ngFor="let item of bgbChildren"
+              (click)="openChildDashboard(item)">
               {{item.childDisplayName}}
             </button>
           </div>

@@ -25,17 +25,19 @@ export class DashboardDetailsComponent implements OnInit {
     this.isTableauProdUrl = this.dashboard.url.includes(
       'tableau-prod.nmgcloud.io'
     );
-    this.dashboardService.checkAccess(this.dashboard.url).subscribe(
-      (response: any) => {
-        // this.displayIframe = true;
-        console.log('Access Response', response);
-      },
-      (error: HttpErrorResponse) => {
-        console.log('Access Error', error);
-        // if (error.status === 401) {
-        //   this.redirectFOrAUthentication();
-        // }
-      }
-    );
+    if (this.isTableauProdUrl) {
+      this.dashboardService.checkAccess(this.dashboard.url).subscribe(
+        (response: any) => {
+          // this.displayIframe = true;
+          console.log('Access Response', response);
+        },
+        (error: HttpErrorResponse) => {
+          console.log('Access Error', error);
+          // if (error.status === 401) {
+          //   this.redirectFOrAUthentication();
+          // }
+        }
+      );
+    }
   }
 }
