@@ -367,7 +367,7 @@ section {
 }
 .profile-box {
   margin-left: -85px;
-  min-width: 210px;
+  min-width: 200px;
 }
 
 .profile-box h3 {
@@ -488,10 +488,15 @@ section {
   background: none!important;
   color: #DC3545;
 }
+.nav-item .fa-angle-down{
+  position: relative!important;
+  top: -2px!important;
+}
 @media (min-width:1024px) 
-{.nav-item{
+{
+  .nav-item{
   margin-left: 10px;
-    margin-right: 10px;
+  margin-right: 10px;
 }
 }
 @media (min-width:1920px)  {
