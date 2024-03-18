@@ -3,7 +3,6 @@ import { Component, Input, OnInit } from '@angular/core';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { Router } from '@angular/router';
 import { Dashboards } from '../types/responses/Dashboards';
-import { Dashboard } from '../types/responses/Dashboard';
 @Component({
   selector: 'app-dashboard-card',
   standalone: true,
@@ -12,29 +11,23 @@ import { Dashboard } from '../types/responses/Dashboard';
   styleUrl: './dashboard-card.component.scss'
 })
 export class DashboardCardComponent implements OnInit {
-  constructor(private readonly router: Router) {}
-  nmgChildren: Dashboards[] = [];
-  nmbChildren: Dashboards[] = [];
-  bgbChildren: Dashboards[] = [];
   @Input()
-  dashboard!: Dashboard;
+  dashboard!: Dashboards;
+  @Input() parentId: string = '';
+  @Input() color: string = '';
+  @Input() bgcolor: string = '';
+  @Input() faIcon: string = '';
 
+  constructor(private readonly router: Router) {}
   ngOnInit(): void {
-    this.nmgChildren = this.dashboard.children.filter(
-      (dashboard) => dashboard.childGroup === 'NMG'
-    );
-    this.nmbChildren = this.dashboard.children.filter(
-      (dashboard) => dashboard.childGroup === 'NMB'
-    );
-    this.bgbChildren = this.dashboard.children.filter(
-      (dashboard) => dashboard.childGroup === 'BGB'
-    );
+    console.log('Dashbaord', this.dashboard);
   }
 
   onClick() {
-    this.router.navigate(['/dashboards', this.dashboard.id], {
+    const detailsURL = `/dashboards-details/${this.parentId}/${this.dashboard.childId}`;
+    console.log('detailsURL', detailsURL, this.dashboard);
+    this.router.navigate([detailsURL], {
       state: this.dashboard
     });
   }
-  openChildDashboard(childDashboard: Dashboards) {}
 }

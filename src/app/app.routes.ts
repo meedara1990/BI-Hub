@@ -17,7 +17,7 @@ export const routes: Routes = [
     component: DashboardsComponent
   },
   {
-    path: 'dashboard-details/:id',
+    path: 'dashboards-details/:id/:childId',
     title: 'DashboardDetails',
     component: DashboardDetailsComponent
   },

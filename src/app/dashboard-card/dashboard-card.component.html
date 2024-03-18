@@ -1,76 +1,20 @@
 <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
 <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <div class="card-body" role="grid">
-  <div class="d-flex flex-column bd-highlight mb-3" style="height: 185px">
+  <div class="d-flex flex-column bd-highlight mb-3" style="height: 160px">
     <div class="mb-auto" (click)="onClick()">
       <div class="row">
         <div class="col-sm-9">
-          <h5 class="card-title">{{dashboard.displayName}}</h5>
+          <h5 class="card-title">{{dashboard.childDisplayName}}</h5>
           <p class="card-text">{{dashboard.description}}</p>
         </div>
         <div class="col-sm-3 text-right">
-          <span style="font-size: 2em" [ngStyle]="{'color': dashboard.color}">
+          <span style="font-size: 2em" [ngStyle]="{'color': color}">
             <i
               class="fa-solid fa-border border"
-              [class]="dashboard.faIcon"
-              [ngStyle]="{'background': dashboard.bgColor}"></i>
+              [class]="faIcon"
+              [ngStyle]="{'background': bgcolor}"></i>
           </span>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex flex-row mb-3 justify-content-between custom-dropdown">
-      <div class="p-2 flex-fill dropdown">
-        <div ngbDropdown class="d-inline-block">
-          <button
-            type="button"
-            class="btn btn-sm"
-            id="dropdownBasic1"
-            ngbDropdownToggle
-            [ngClass]="nmgChildren.length === 0 ? 'disabled' : 'enabled'">
-            NMG <span class="badge badge-light">{{nmgChildren.length}}</span>
-          </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button
-              ngbDropdownItem
-              *ngFor="let item of nmgChildren"
-              (click)="openChildDashboard(item)">
-              {{item.childDisplayName}}
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 flex-fill">
-        <div ngbDropdown class="d-inline-block">
-          <button
-            type="button"
-            class="btn btn-sm"
-            [ngClass]="nmbChildren.length === 0 ? 'disabled' : 'enabled'"
-            id="dropdownBasic2"
-            ngbDropdownToggle>
-            NMB <span class="badge badge-light">{{nmbChildren.length}}</span>
-          </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-            <button ngbDropdownItem *ngFor="let item of nmbChildren">
-              {{item.childDisplayName}}
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="p-2 flex-fill">
-        <div ngbDropdown class="d-inline-block">
-          <button
-            type="button"
-            class="btn btn-sm"
-            id="dropdownBasic3"
-            [ngClass]="bgbChildren.length === 0 ? 'disabled' : 'enabled'"
-            ngbDropdownToggle>
-            BGB <span class="badge badge-light">{{bgbChildren.length}}</span>
-          </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
-            <button ngbDropdownItem *ngFor="let item of bgbChildren">
-              {{item.childDisplayName}}
-            </button>
-          </div>
         </div>
       </div>
     </div>

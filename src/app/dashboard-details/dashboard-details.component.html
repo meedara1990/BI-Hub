@@ -1,22 +1,25 @@
-<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
-<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
-<div class="card-body" role="grid">
-  <div class="d-flex flex-column bd-highlight mb-3" style="height: 160px">
-    <div class="mb-auto" (click)="onClick()">
-      <div class="row">
-        <div class="col-sm-9">
-          <h5 class="card-title">{{dashboard.childDisplayName}}</h5>
-          <p class="card-text">{{dashboard.description}}</p>
-        </div>
-        <div class="col-sm-3 text-right">
-          <span style="font-size: 2em" [ngStyle]="{'color': color}">
-            <i
-              class="fa-solid fa-border border"
-              [class]="faIcon"
-              [ngStyle]="{'background': bgcolor}"></i>
-          </span>
-        </div>
+<section id="intro2">
+  <div class="col-12 row d-flex px-0 m-0">
+    <div class="row g-4 pt-4 justify-content-center align-items-center">
+      <div class="col">
+        <h3 class="body-title" style="text-align: center">
+          {{dashboard.childDisplayName}}
+        </h3>
+        <p class="body-text" style="text-align: center">
+          {{dashboard.description}}
+        </p>
       </div>
     </div>
+    <div class="row col-12 row d-flex px-0 m-0 p-5 iframecontent top_80">
+      <iframe
+        id="vizContainer"
+        as="style"
+        rel="stylesheet preload prefetch"
+        scrolling="auto"
+        frameborder="0"
+        [src]="dashboard.url | sanitize"
+        [title]="dashboard.childDisplayName">
+      </iframe>
+    </div>
   </div>
-</div>
+</section>
