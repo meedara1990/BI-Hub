@@ -37,7 +37,7 @@
           "childGroup": "BGB",
           "childId": "0",
           "childDisplayName": "BGB - Performance Dashboard",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BGBusinessPerformanceDashboard_17032857397560/BGBSegmentSummary?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Sales performance by customer segmentation. Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {

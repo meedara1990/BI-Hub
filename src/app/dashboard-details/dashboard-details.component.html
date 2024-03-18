@@ -1,4 +1,4 @@
-<section id="intro2">
+<section id="intro2" class="details-section">
   <div class="col-12 row d-flex px-0 m-0">
     <div class="row g-4 pt-4 justify-content-center align-items-center">
       <div class="col">
@@ -11,10 +11,13 @@
       </div>
     </div>
     <div class="row col-12 row d-flex px-0 m-0 p-5 iframecontent top_80">
+      <div *ngIf="isTableauProdUrl" class="row col-12 hidetableauheader"></div>
       <iframe
         id="vizContainer"
+        *ngIf="displayIframe"
         as="style"
         rel="stylesheet preload prefetch"
+        [ngClass]="isTableauProdUrl ? 'remove_header_css iframe_custom_css' : 'iframe_custom_css'"
         scrolling="auto"
         frameborder="0"
         [src]="dashboard.url | sanitize"

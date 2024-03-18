@@ -350,6 +350,10 @@
 section {
   padding: 85px 0;
 }
+
+.details-section {
+  padding: 35px 0 !important;
+}
 .profile-head {
   background-color: #ccc;
   height: 53px;
@@ -648,3 +652,20 @@ section {
 .top_80{
   top: -32px;
 }
+.iframe_custom_css{
+    width: 100%;
+    height: 67vh;
+}
+
+.hidetableauheader{
+  display: block;
+  position: absolute;
+  height: 52px;
+  background-color: white;
+  z-index: 99;
+}
+.remove_header_css
+  .tb-body
+  {
+    top: -79px !important
+  }
