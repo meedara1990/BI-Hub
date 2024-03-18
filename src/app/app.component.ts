@@ -91,7 +91,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('check app component onInit');
-    this.checkAuthentication();
+    this.isLoggedIn = true;
+    //this.checkAuthentication();
   }
 
   checkAuthentication() {
