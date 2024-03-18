@@ -68,7 +68,7 @@
   box-shadow: none!important;
   outline: none!important;
   background: none!important;
-  color: #fff!important;
+  color: #FFFFFF!important;
   width: 100%;
   padding: 0px !important;
 
@@ -80,14 +80,14 @@
   margin-top: -3px;
 }
 .autocomplete-container .input-container input::-webkit-input-placeholder {
-  color:#fff;
+  color:#FFFFFF;
   }
   .autocomplete-container .input-container input:-moz-placeholder { /* Firefox 18- */
-  color:#fff;
+  color:#FFFFFF;
   }
 
   .autocomplete-container .input-container input::-moz-placeholder { /* Firefox 19+ */
-  color:#fff;
+  color:#FFFFFF;
   }
 .autocomplete-container {
   box-shadow:none!important;
@@ -110,7 +110,7 @@
 }
 .autocomplete-container .suggestions-container ul li a:hover{
  background-color: #0D6EFD;
- color: #fff;
+ color: #FFFFFF;
  font-size: 13px;
 }
 .navbar-brand img{
@@ -119,7 +119,7 @@
 }
 .nav-tabs .nav-link.active {
   background-color: #0d6efd!important;
-  color: #fff!important;
+  color: #FFFFFF!important;
   border: 1px solid #0d6efd!important;
 }
 .ng-autocomplete {
@@ -174,7 +174,7 @@
 
 .nav-tabs .nav-link.active {
   background-color: #0d6efd;
-  color: #fff;
+  color: #FFFFFF;
   border: 1px solid #0d6efd;
 }
 
@@ -200,7 +200,7 @@
   padding-left: 5px;
   padding-bottom: 0px !important;
   padding-right: 5px;
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .card-body .fa-solid, .fas {
   font-weight: 900;
@@ -248,7 +248,7 @@
 {
   position: relative;
   top: -6px !important;
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 #intro2 .body-title{
   color: #3B3B3B;
@@ -269,40 +269,40 @@
 }
 
 .dropdown-toggle-spli {
-  color: #fff !important;
+  color: #FFFFFF !important;
   font-size: 14px !important;
 }
 
 .dropdown-toggle-spli:hover {
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .dropdown-toggle-spli:focus {
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .dropdown-toggle:hover {
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .dropdown-item:hover {
   background-color: #0d6efd !important;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 .dropdown-content a:hover {
   background-color: #0d6efd !important;
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .dropdown-item:focus {
   background-color: #0d6efd !important;
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .dropdown-content a:focus {
   background-color: #0d6efd !important;
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .custom-dropdown .dropdown-toggle:hover {
@@ -410,8 +410,8 @@ section {
   margin: 3px 10px;
   font-size: 12px;
   border-radius: 3px;
-  border: 3px solid #fff;
-  background-color: #fff;
+  border: 3px solid #FFFFFF;
+  background-color: #FFFFFF;
   min-height: 180px;
   margin-bottom: 20px;
   //max-height: 230px;
@@ -421,7 +421,7 @@ section {
   cursor: pointer;
 }
 .rounded{
-  background-color: #fff;
+  background-color: #FFFFFF;
 }
 .first-row {
   position: relative;
@@ -430,11 +430,11 @@ section {
 
 #intro {
   background-color: #0d6efd;
-  color: #fff
+  color: #FFFFFF
 }
 
 .input-group-text {
-  color: #fff !important;
+  color: #FFFFFF !important;
   border: none;
   background: rgba(255, 255, 255, 0.5);
 
@@ -444,10 +444,10 @@ section {
 #intro1,
 #intro2,
 #intro3 {
-  background-color: #ededed;
+  background-color: #EDEDED;
 }
 .footer {
-  background-color: #ededed;
+  background-color: #EDEDED;
 }
 .footer ul {
   margin: 0 auto;
@@ -547,17 +547,17 @@ section {
 }
 .custom-search::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #fff;
+  color: #FFFFFF;
 }
 .custom-search:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #fff;
+  color: #FFFFFF;
   opacity: 1;
 }
 
 .custom-search::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #fff;
+  color: #FFFFFF;
   opacity: 1;
 
 }
@@ -643,7 +643,7 @@ section {
 }
 
 .iframecontent{
-    max-height: calc(100vh - 75px);
+    max-height: calc(100vh - 45px);
     height: 100% !important;
     padding: 0px;
     overflow: auto !important;
@@ -654,18 +654,19 @@ section {
 }
 .iframe_custom_css{
     width: 100%;
-    height: 67vh;
+    height: 72vh;
 }
 
 .hidetableauheader{
   display: block;
   position: absolute;
   height: 52px;
-  background-color: white;
+  background-color: #EDEDED;
   z-index: 99;
 }
 .remove_header_css
   .tb-body
   {
-    top: -79px !important
+    top: -79px !important;
   }
+
