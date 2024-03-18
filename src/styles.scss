@@ -481,7 +481,25 @@ section {
 .footer_email-input {
   min-width: 250px;
 }
-
+.profile-content p{
+  font-size: 12px;;
+}
+.profile-content a:hover{
+  background: none!important;
+  color: #DC3545;
+}
+@media (min-width:1024px) 
+{.nav-item{
+  margin-left: 10px;
+    margin-right: 10px;
+}
+}
+@media (min-width:1920px)  {
+  #intro1, #intro2, #intro3{
+    min-height: 800px;
+  }
+  
+}
 @media (max-width:767px) {
   .footer_email-input {
     min-width: 0;
@@ -642,6 +660,7 @@ section {
     padding-bottom: 20px;
 }
 
+
 .iframecontent{
     max-height: calc(100vh - 45px);
     height: 100% !important;
@@ -670,3 +689,26 @@ section {
     top: -79px !important;
   }
 
+  .spinner {
+    margin: 0 auto;
+    width: 30px!important;
+    height: 30px!important;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #213547;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    margin-top: 15px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
