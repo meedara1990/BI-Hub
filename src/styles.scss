@@ -56,45 +56,53 @@
   font-style: normal;
   font-display: swap;
 }
-.appname{
+
+.appname {
   font-weight: 600;
   font-size: 32px;
 }
 
 .autocomplete-container .input-container input {
   font-size: 14px;
-  box-sizing: none!important;
-  border: none!important;
-  box-shadow: none!important;
-  outline: none!important;
-  background: none!important;
-  color: #FFFFFF!important;
+  box-sizing: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: none !important;
+  color: #FFFFFF !important;
   width: 100%;
   padding: 0px !important;
 
   line-height: 10px;
-  height: 29px!important;
+  height: 29px !important;
   /* height: 40px; */
 }
-.ng-autocomplete .input-container{
+
+.ng-autocomplete .input-container {
   margin-top: -3px;
 }
-.autocomplete-container .input-container input::-webkit-input-placeholder {
-  color:#FFFFFF;
-  }
-  .autocomplete-container .input-container input:-moz-placeholder { /* Firefox 18- */
-  color:#FFFFFF;
-  }
 
-  .autocomplete-container .input-container input::-moz-placeholder { /* Firefox 19+ */
-  color:#FFFFFF;
-  }
+.autocomplete-container .input-container input::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.autocomplete-container .input-container input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #FFFFFF;
+}
+
+.autocomplete-container .input-container input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FFFFFF;
+}
+
 .autocomplete-container {
-  box-shadow:none!important;
+  box-shadow: none !important;
   position: relative;
   overflow: visible;
 
 }
+
 .autocomplete-container .suggestions-container ul li {
   position: relative;
   list-style: none;
@@ -105,27 +113,33 @@
   line-height: 4px !important;
   /* font-size: 12px !important; */
 }
-.autocomplete-container .suggestions-container ul li a{
-  font-size: 13px!important;
+
+.autocomplete-container .suggestions-container ul li a {
+  font-size: 13px !important;
 }
-.autocomplete-container .suggestions-container ul li a:hover{
- background-color: #0D6EFD;
- color: #FFFFFF;
- font-size: 13px;
+
+.autocomplete-container .suggestions-container ul li a:hover {
+  background-color: #0D6EFD;
+  color: #FFFFFF;
+  font-size: 13px;
 }
-.navbar-brand img{
+
+.navbar-brand img {
   position: relative;
-    top: -5px;
+  top: -5px;
 }
+
 .nav-tabs .nav-link.active {
-  background-color: #0d6efd!important;
-  color: #FFFFFF!important;
-  border: 1px solid #0d6efd!important;
+  background-color: #0d6efd !important;
+  color: #FFFFFF !important;
+  border: 1px solid #0d6efd !important;
 }
+
 .ng-autocomplete {
   width: auto !important;
   height: 35px;
 }
+
 .btn .badge {
   color: #000;
   position: relative;
@@ -202,10 +216,13 @@
   padding-right: 5px;
   background-color: #FFFFFF;
 }
-.card-body .fa-solid, .fas {
+
+.card-body .fa-solid,
+.fas {
   font-weight: 900;
   padding: 12px;
 }
+
 .card-text {
   font-size: 12px !important;
   line-height: 18px !important;
@@ -244,24 +261,29 @@
   font-weight: 400;
   color: #ABCFFB;
 }
-.material-icons
-{
+
+.material-icons {
   position: relative;
   top: -6px !important;
   color: #FFFFFF !important;
 }
-#intro2 .body-title{
+
+#intro2 .body-title {
   color: #3B3B3B;
 }
-#intro2 .body-text{
+
+#intro2 .body-text {
   color: #686868;
 }
-#intro3 .body-title{
+
+#intro3 .body-title {
   color: #0d6efd;
 }
-#intro3 .body-text{
+
+#intro3 .body-text {
   color: #686868;
 }
+
 .profile-icon {
   margin-left: auto;
   margin-right: auto;
@@ -324,18 +346,20 @@
   margin-right: auto;
 }
 
-.dropdown-toggle{
-  padding: 8px!important;
+.dropdown-toggle {
+  padding: 8px !important;
 }
 
 .dropdown-toggle:hover {
   background: none;
 
 }
+
 .dropdown-item {
   font-family: 'Open Sans';
   font-size: 12px;
 }
+
 .custom-dropdown {
   border-top: 1px solid #ccc;
   margin-left: -17px;
@@ -344,12 +368,15 @@
   position: relative;
   top: 5px;
 }
+
 section {
   padding: 85px 0;
 }
+
 .details-section {
   padding: 35px 0 !important;
 }
+
 .profile-head {
   background-color: #ccc;
   height: 53px;
@@ -357,17 +384,21 @@ section {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
+
 .profile {
   font-size: 27px;
   margin-right: 10px;
 }
+
 .profile-box {
   margin-left: -85px;
   min-width: 200px;
 }
+
 .profile-box h3 {
   font-size: 20px;
 }
+
 .profile-box {
   right: 0px;
   font-family: 'Open Sans';
@@ -379,12 +410,14 @@ section {
   margin: 0 auto;
   margin-top: -40px;
 }
+
 .profile-box h3,
 .profile-box p,
 .profile-box i {
   text-align: center;
 
 }
+
 .dropdown-toggle {
   white-space: nowrap;
   font-size: 11px;
@@ -407,14 +440,17 @@ section {
   min-height: 180px;
   margin-bottom: 20px;
   //max-height: 230px;
- // min-width: 312px;
+  // min-width: 312px;
 }
-.card:hover{
+
+.card:hover {
   cursor: pointer;
 }
-.rounded{
+
+.rounded {
   background-color: #FFFFFF;
 }
+
 .first-row {
   position: relative;
   top: -80px;
@@ -438,12 +474,15 @@ section {
 #intro3 {
   background-color: #EDEDED;
 }
+
 .footer {
   background-color: #EDEDED;
 }
+
 .footer ul {
   margin: 0 auto;
 }
+
 .footer {
   font-size: 13px;
   font-family: "Open Sans";
@@ -473,30 +512,39 @@ section {
 .footer_email-input {
   min-width: 250px;
 }
-.profile-content p{
-  font-size: 12px;;
+
+.profile-content p {
+  font-size: 12px;
+  ;
 }
-.profile-content a:hover{
-  background: none!important;
+
+.profile-content a:hover {
+  background: none !important;
   color: #DC3545;
 }
-.nav-item .fa-angle-down{
-  position: relative!important;
-  top: -3px!important;
+
+.nav-item .fa-angle-down {
+  position: relative !important;
+  top: -3px !important;
 }
-@media (min-width:1024px) 
-{
-  .nav-item{
-  margin-left: 10px;
-  margin-right: 10px;
+
+@media (min-width:1024px) {
+  .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-}
-@media (min-width:1920px)  {
-  #intro1, #intro2, #intro3{
+
+@media (min-width:1920px) {
+
+  #intro1,
+  #intro2,
+  #intro3 {
     min-height: 800px;
   }
-  
+
 }
+
 @media (max-width:767px) {
   .footer_email-input {
     min-width: 0;
@@ -533,6 +581,7 @@ section {
   }
 
 }
+
 .footer_sub-nav li {
   padding-left: .75rem;
   padding-right: .75rem;
@@ -558,12 +607,14 @@ section {
   border: none;
   background: rgba(255, 255, 255, 0.5);
   left: 1px;
-  padding: 0x!important;
+  padding: 0x !important;
 }
+
 .custom-search::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #FFFFFF;
 }
+
 .custom-search:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #FFFFFF;
@@ -577,41 +628,68 @@ section {
 
 }
 
-.btn.disabled {
-  // background-color: #97929248;
-  cursor: not-allowed;
-  opacity: 0.3;
 
-}
-.p-2{
+
+.p-2 {
   padding: 0px !important;
 
+}
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+  border-radius: 0px;
+ // width: 100%;
+  margin-bottom: 0px;
+ 
+  width: 95px;
+  //border-bottom: 2px solid #fff;
 }
 .btn.enabled {
   cursor: pointer;
   color: #0d6efd;
-    /* padding: 10px; */
-    border-radius: 0px;
- width: 100%;
- //background: red;
- margin-bottom: 0px;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  width: 95px;
 }
-.btn.enabled:hover{
+
+.btn.enabled.third:hover {
   background-color: rgb(158, 197, 254);
+  height: 31px;
+  width: 95px;
 }
-.d-inline-block{
-  width: 100%!important;
+.btn.enabled.first:hover {
+  background-color: rgb(158, 197, 254);
+  height: 31px;
+  width: 95px;
+  margin-left: 1px;
+}
+.btn.enabled.second:hover {
+  background-color: rgb(158, 197, 254);
+  height: 31px;
+  width: 95px;
+  margin-left: 1px;
+}
+.btn.disabled:hover {
+  height: 31px;
+  width: 95px;
+}
+.d-inline-block {
+  width: 100% !important;
 }
 
 .btn.enabled span {
   cursor: pointer;
   color: #0d6efd !important;
 }
+
 .button {
   color: white;
-  display: inline-block; /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
-  position: relative; /* All 'absolute'ly positioned elements are relative to this one */
-  padding: 2px 5px; /* Add some padding so it looks nice */
+  display: inline-block;
+  /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative;
+  /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px;
+  /* Add some padding so it looks nice */
 }
 
 /* Make the badge float in the top right corner of the button */
@@ -626,11 +704,13 @@ section {
   left: 5px;
   z-index: 9;
 }
-.nav-tabs .nav-link{
+
+.nav-tabs .nav-link {
   width: 60px;
   font-size: 14px;
 }
-.details-btn{
+
+.details-btn {
   border-radius: 6px;
   padding: 8px;
   background-color: rgb(13, 110, 253);
@@ -644,68 +724,71 @@ section {
   margin-bottom: 60px !important;
 
 }
-.details-btn .button__badge{
+
+.details-btn .button__badge {
 
   top: -20px;
   left: 1px;
   z-index: 9;
 
 }
-.cards-section{
+
+.cards-section {
   border-bottom: 1px solid #ccc;
-    /* margin-top: 36px; */
-    padding-bottom: 20px;
+  /* margin-top: 36px; */
+  padding-bottom: 20px;
 }
 
-
-.iframecontent{
-    max-height: calc(100vh - 45px);
-    height: 100% !important;
-    padding: 0px;
-    overflow: auto !important;
-    scroll-behavior: smooth;
+.iframecontent {
+  max-height: calc(100vh - 45px);
+  height: 100% !important;
+  padding: 0px;
+  overflow: auto !important;
+  scroll-behavior: smooth;
 }
-.top_80{
+
+.top_80 {
   top: -32px;
 }
-.iframe_custom_css{
-    width: 100%;
-    height: 72vh;
+
+.iframe_custom_css {
+  width: 100%;
+  height: 72vh;
 }
 
-.hidetableauheader{
+.hidetableauheader {
   display: block;
   position: absolute;
   height: 52px;
   background-color: #EDEDED;
   z-index: 99;
 }
-.remove_header_css
-  .tb-body
-  {
-    top: -79px !important;
+
+.remove_header_css .tb-body {
+  top: -79px !important;
+}
+
+.spinner {
+  margin: 0 auto;
+  width: 30px !important;
+  height: 30px !important;
+  //border: 5px solid #f3f3f3;
+  border-top: 5px solid #213547;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  margin-top: 15px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
 
-  .spinner {
-    margin: 0 auto;
-    width: 30px!important;
-    height: 30px!important;
-    //border: 5px solid #f3f3f3;
-    border-top: 5px solid #213547;
-    border-radius: 50%;
-    animation: spin 1s infinite linear;
-    margin-top: 15px;
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-    }
-  }
+}
