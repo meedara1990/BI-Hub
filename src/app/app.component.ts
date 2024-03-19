@@ -90,9 +90,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('check app component onInit');
-    this.isLoggedIn = true;
-    //this.checkAuthentication();
+    console.log('check app component onInit', environment.testStr);
+    setTimeout(() => {
+      //this.checkAuthentication();
+    }, 2000);
   }
 
   checkAuthentication() {
