@@ -5,9 +5,12 @@
     "ng": "ng",
     "start": "ng serve --port 3000",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build --watch --configuration dev",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "dev": "npx ng build --configuration dev",
+    "qa": "npx ng build --configuration qa",
+    "prod": "npx ng build --configuration production"
   },
   "private": true,
   "dependencies": {

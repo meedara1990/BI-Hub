@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as dashboards from '../../assets/dashboards.json';
+import * as dashboards from './dashboards.json';
 import { CommonModule } from '@angular/common';
 import { BodyComponent } from '../body/body.component';
 import { MainDashboard } from '../types/responses/MainDashboard';
