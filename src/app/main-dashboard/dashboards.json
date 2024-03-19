@@ -36,7 +36,7 @@
         {
           "childGroup": "BGB",
           "childId": "0",
-          "childDisplayName": "BGB - Performance Dashboard",
+          "childDisplayName": "BGB - Business Performance Dashboard",
           "url": "https://tableau-prod.nmgcloud.io/#/views/BGBusinessPerformanceDashboard_17032857397560/BGBSegmentSummary?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Sales performance by customer segmentation. Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
@@ -44,21 +44,21 @@
           "childGroup": "BGB",
           "childId": "1",
           "childDisplayName": "BGB - Customer Demographics",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/Customer_demographics_1_0_17032872681540/BGLanding?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Demographics and sales data for Active customers (L12M) filterable by customer segmentation or by demographics."
         },
         {
           "childGroup": "BGB",
           "childId": "2",
           "childDisplayName": "BGB - New Cust. Repurchase Rates",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BGONewCustomer-RepurchaseRates/BGONewCustomers?:display_count=n&:iid=5&:origin=viz_share_link&:showAppBanner=false&:showVizHome=n&allowFullScreen=true",
           "description": "New customers acquired online.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
           "childGroup": "BGB",
           "childId": "3",
           "childDisplayName": "BGB - Personalized Promotions",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/PersonalizedPromotions/PromotionsPerformance?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Private promotions performance measuring Test group against Control group with sales incrementality and redemption rates."
         },
         {
@@ -66,21 +66,21 @@
           "childId": "4",
           "childName": "",
           "childDisplayName": "BGB - New Existing Cust. Performance",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NewandExistingCustomerPerformance/BGBSales?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Sales performance by new and existing customers.  Filterable by Channel, Price Type, Sales Type, Division, and Time Frame."
         },
         {
           "childId": "5",
           "childGroup": "BGB",
           "childDisplayName": "BGB - Private Client Tracking",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/PrivateClientsFY24Tracking/SegmentSummary?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "VVIC/VIC customers from FY23, compares segment sales performance YTD to LY, sales detail for customers."
         },
         {
           "childGroup": "BGB",
           "childId": "6",
           "childDisplayName": "BGB - Planning & Goals",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BGPlanningStats/BGO?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Tracks retention rates for top segments and for channel."
         },
         {
@@ -94,15 +94,36 @@
           "childId": "8",
           "childGroup": "BGB",
           "childDisplayName": "BGB - FY 23 BGO New Customer - Repurchase Rates",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/FY23BGONewCustomer-RepurchaseRates/BGONewCustomers?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "New customers acquired online in FY23.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
           "childId": "9",
           "childGroup": "BGB",
           "childDisplayName": "BGB - Customer Spend Band Dashboard",
-          "url": "",
-          "description": "Scores BG level customer spend and BGB/BGS/BGO level spend band performance. Sales&Trips by Customer Spend Band broken down by Channel/Div/Price Type(12mo History & LY/FY19 comps)."
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BGCustomerSpendBandDashboard/BGSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Scores customer spending at the group level across both NM and BG. Spend band performance at the NMG/Store/Online level. Breakdowns available to the Price Type and Division level."
+        },
+        {
+          "childId": "10",
+          "childGroup": "NMG",
+          "childDisplayName": "NMG - Customer Spend Band Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMGCustomerSpendBandDashboard/NMGSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Scores customer spending at the group level across both NM and BG. Spend band performance at the NMG/Store/Online level. Breakdowns available to the Price Type and Division level."
+        },
+        {
+          "childId": "11",
+          "childGroup": "NMB",
+          "childDisplayName": "NMB - Customer Spend Band Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMCustomerSpendBandDashboard/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Scores customer spending at the NM level only. Spend band performance at the NMG/Store/Online level. Breakdowns available to the Price Type and Division level."
+        },
+        {
+          "childId": "12",
+          "childGroup": "NMB",
+          "childDisplayName": "NMB - NMS Store by Spendband Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMSStorebySpendBand/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Customer spend band performance at the Region/Metro/Store level for NMS. Breakdowns available to the Price Type and Division level"
         }
       ]
     },
@@ -119,28 +140,28 @@
           "childGroup": "NMG",
           "childId": "0",
           "childDisplayName": "Web Style Performance",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/views/WebStylePerformance/WebStylePerformance?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Contextualize trend of Traffic, Conversion & Demand to understand the % which is negated downstream in the form of Cancels, Returns"
         },
         {
           "childId": "1",
           "childGroup": "BGB",
           "childDisplayName": "BGB - Cancel Code",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/CancelCode/CANCELCODE?:iid=3:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Cancels trended by reason code, division, vendor, class, price type."
         },
         {
           "childId": "2",
           "childGroup": "BGB",
           "childDisplayName": "BGB - Return Report",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/Returns/ReturnMain?:iid=1:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Returns trended, by reason code, vendor, marketing channel, class, and depiction."
         },
         {
           "childId": "3",
           "childGroup": "BGB",
           "childDisplayName": "BGB - World of Pre-Order ",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/WorldofPre-Order/Pre-Order?:iid=1:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Pre-Order item transactional metrics. In this data set, pre-order is flagged once shipped."
         }
       ]
@@ -158,38 +179,44 @@
           "childId": "0",
           "childGroup": "NMG",
           "childDisplayName": "CA Relationship",
-          "url": "",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/5ab88c73-b2e1-469a-bd22-3859b932f0e3/sheet/c7047021-3d31-4391-9ff1-00db3fb61dbf/state/analysis/hubUrl/%2Fcatalog",
           "description": "Coming soon"
         },
         {
           "childId": "1",
           "childGroup": "NMG",
-          "childDisplayName": "MVC Spend Band Dashboard",
-          "url": "",
-          "description": "Measure spend-band level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration."
+          "childDisplayName": "Store/Client Advisor Performance Dashboard",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/0e89afc4-77a3-4da2-9ec5-8a51626c5504/sheet/6a86da6a-572d-4829-a602-517a8211c7fd/state/analysis",
+          "description": "Coming soon"
         },
         {
           "childId": "2",
           "childGroup": "NMG",
-          "childDisplayName": "MVC Store Dashboard",
-          "url": "",
-          "description": "Measure store-level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration"
+          "childDisplayName": "MVC Spend Band Dashboard",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/369c5c17-0c94-41bd-9304-ce95c04f9cfb/sheet/7439d481-670d-492f-966d-29de31512218/state/analysis/hubUrl/%2Fcatalog%3Fquick_search_filter%3Dmvc%26space_filter%3D633f1d7b43da473e8b890108",
+          "description": "Measure spend-band level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration."
         },
         {
           "childId": "3",
           "childGroup": "NMG",
           "childName": "",
-          "childDisplayName": "MVC Customer Dashboard",
-          "url": "",
-          "description": "Audience Selection Tools for targeted marketing/events/offers and Customer Deep Dive for 1-1 customer strategy support"
+          "childDisplayName": "MVC Store Dashboard",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/92783310-78f9-4b8e-a313-09987692b0c3/sheet/f939ec43-ae9b-4a2e-9664-9a45d2d462a8/state/analysis/hubUrl/%2Fcatalog%3Fquick_search_filter%3Dmvc%26space_filter%3D633f1d7b43da473e8b890108",
+          "description": "Measure store-level MVC Goal/KPIs, MVC strategies, and the product/pricing/marketing drivers in MVC retention and migration"
         },
         {
           "childId": "4",
           "childGroup": "NMG",
+          "childDisplayName": "MVC Customer Dashboard",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/f633ed33-fadb-4a44-bc57-de67f1537ae7/sheet/3b512760-065d-4568-97bc-4801c24ec906/state/analysis/hubUrl/%2Fcatalog%3Fquick_search_filter%3Dmvc%26space_filter%3D633f1d7b43da473e8b890108",
+          "description": "Audience Selection Tools for targeted marketing/events/offers and Customer Deep Dive for 1-1 customer strategy support"
+        },
+        {
+          "childId": "5",
+          "childGroup": "NMG",
           "childDisplayName": "Associate Score Card",
-          "url": "",
-          "description": "Coming soon",
-          "parentName": "stores"
+          "url": "https://nmg.us.qlikcloud.com/sense/app/8456f1d0-0322-411f-badf-c85505c2084a/sheet/fb541151-743d-428f-bf1f-174eeed604dd/state/analysis/hubUrl/%2Fcatalog%3Fspace_filter%3D633f1d7b43da473e8b890108",
+          "description": "Coming soon"
         }
       ]
     },
@@ -206,8 +233,50 @@
           "childGroup": "BGB",
           "childId": "0",
           "childDisplayName": "BGB - New Customers",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BG_comNewCustomerDashboardbyMarketingChannelandDivision_17080360845310/MarketingChannelOnly?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "YoY and trends of new customers by acquisition channel, incuding division."
+        },
+        {
+          "childGroup": "NMB",
+          "childId": "1",
+          "childDisplayName": "NMB - Daily Online Marketing Summary",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/DailyOnlineMarketingSummary_17095640255470/NMO?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "Daily Online Visits, Demand, & ROAS performance by Marketing Channel and Brand for Yesterday, WTD, MTD, QTD"
+        },
+        {
+          "childGroup": "NMB",
+          "childId": "2",
+          "childDisplayName": "NMB - Marketing Scorecard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/MarketingScorecard_17095640704250/NMO?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "Weekly, Monthly, Quarterly and Annual Performance. All KPI are against last year and plan. Inclusive of proxy EBITDA calculation"
+        },
+        {
+          "childGroup": "NMG",
+          "childId": "3",
+          "childDisplayName": "CAC by Channel",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/CACbyChannel/CAC?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "Acquisition cost by year/season/quarter/month . View CAC in aggregate or by business unit.CAC granularity across paid or organic media channels."
+        },
+        {
+          "childGroup": "NMB",
+          "childId": "4",
+          "childDisplayName": "NMB - Channel EBITDA",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/ChannelEBITDA/ChannelEBITDA?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "EBIDTA by media channel.Sort by month, week, etc. Calculation based on actual division and net sales divisions."
+        },
+        {
+          "childGroup": "NMB",
+          "childId": "5",
+          "childDisplayName": "NMB - Online Marketing Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/OnlineMarketingDashboard_17095632642220/ChannelsTrend?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "Demand to Net Trended View, toggle by media channels and timeframe. Based on Last Click Demand, not Multi-touch attribution."
+        },
+        {
+          "childGroup": "NMG",
+          "childId": "6",
+          "childDisplayName": "NMG - Hourly Marketing Channel Performance",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMGHourly_17103404440150/HourlyKPI?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
+          "description": "Intraday performance trending by channel. Includes core metrics - Traffic/AOV/CVR and Demand. Can Toggle between Brands (BGO/HCO/NMO)."
         }
       ]
     },
@@ -224,70 +293,70 @@
           "childGroup": "NMG",
           "childId": "0",
           "childDisplayName": "OPD - NOW Dashboard",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/views/OPD-NOWDashboard/ExecutiveSummary?:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "This provides visibility for Executives and NM/BG coordinators that would help them obtain the metrics for Items which are not on web."
         },
         {
           "childGroup": "NMG",
           "childId": "1",
           "childDisplayName": "Item Lifecycle Report",
-          "url": "",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/5551d2ab-6561-4577-b602-0d98bf3e0173/sheet/e77f5e5c-6604-49e3-b511-838aaf0d8ff9/state/analysis",
           "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "2",
           "childDisplayName": "Aged On Hand",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/AgeonHand/AgeonHandSummary",
           "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "3",
           "childDisplayName": "Brand Division and Brand Location",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BrandDivisionandBrandLocation/BrandDivision",
           "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "4",
           "childDisplayName": "Case Card Items Retail over $20,000",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/views/CaseCardOver20K75Kand100K/CaseCardOverCostRetail?:iid=4&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "coming soon"
         },
         {
           "childId": "5",
           "childGroup": "NMG",
           "childDisplayName": "Certificate of Sale",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/CertificateofSale/HowTo",
           "description": "coming soon"
         },
         {
           "childId": "6",
           "childGroup": "NMG",
           "childDisplayName": "Cross Reference Report",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/CrossReferenceReport/NewPIMSKUOLDSKU",
           "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "7",
           "childDisplayName": "On Hand Inventory Not in Cases",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/views/OnHandInventoryNotInCases/OnHandInventoryNotInCases?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "8",
           "childDisplayName": "Product History Report",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/views/ProductHistoryReport/ProductHistoryReport?:iid=4:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "coming soon"
         },
         {
           "childId": "9",
           "childGroup": "NMG",
           "childDisplayName": "Serial Numbers by Vendor and Item",
-          "url": "",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/SerialNumbersbyVendorandItem/SerialNumbersByVendorandItem",
           "description": "coming soon"
         }
       ]
@@ -304,19 +373,16 @@
         {
           "childId": "0",
           "childGroup": "NMG",
-          "childName": "",
           "childDisplayName": "People Services:  Belonging",
-          "url": "",
-          "description": "coming soon",
-          "parentName": "product"
+          "url": "https://nmg.us.qlikcloud.com/sense/app/c1b59aa0-1566-462c-b7c0-eb7e92fdd811/sheet/1a786b10-3826-4a66-b8af-1406714a14e1/state/analysis/hubUrl/%2Fcatalog",
+          "description": "coming soon"
         },
         {
           "childId": "1",
           "childGroup": "NMG",
           "childDisplayName": "Organizational Health Dashboard",
-          "url": "",
-          "description": "coming soon",
-          "parentName": "product"
+          "url": "https://nmg.us.qlikcloud.com/sense/app/cc26cbbb-e461-42ef-bbb9-f4f7c9d367e5/sheet/d9ab5ffe-4163-4cf8-af06-c65291c2df52/state/analysis/hubUrl/%2Fcatalog",
+          "description": "coming soon"
         }
       ]
     },
@@ -334,7 +400,7 @@
           "childGroup": "NMG",
           "childName": "",
           "childDisplayName": "Supply Chain Enterprise Dashboard",
-          "url": "",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/f6a28ba1-26b8-405f-b26e-ce9c1430ee31/sheet/6d974969-9da8-4168-800f-82e5513af5cb/state/analysis/hubUrl/%2Fcatalog",
           "description": "coming soon",
           "parentName": "supply-chain"
         }
