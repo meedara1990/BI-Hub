@@ -474,7 +474,11 @@ section {
 #intro3 {
   background-color: #EDEDED;
 }
-
+.loader{
+  position: fixed;
+  top: 50% !important;
+  width: 100%;
+}
 .footer {
   background-color: #EDEDED;
 }
