@@ -93,6 +93,7 @@ export class AppComponent implements OnInit {
     console.log('check app component onInit', environment.testStr);
     setTimeout(() => {
       //this.checkAuthentication();
+      this.isLoggedIn = true;
     }, 2000);
   }
 

@@ -33,5 +33,11 @@ export class DashboardsComponent implements OnInit {
     this.bgbChildren = this.dashboard.children.filter(
       (dashboard) => dashboard.childGroup === 'BGB'
     );
+    this.active =
+      this.nmgChildren.length === 0
+        ? this.nmbChildren.length === 0
+          ? 3
+          : 2
+        : 1;
   }
 }
