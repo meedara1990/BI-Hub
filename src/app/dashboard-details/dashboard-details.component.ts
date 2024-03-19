@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { Dashboards } from '../types/responses/Dashboards';
 import { SanitizePipe } from '../shared/sanitize.pipe';
 import { DashboardService } from '../shared/dashboard.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-dashboard-details',
   standalone: true,
@@ -19,7 +19,7 @@ export class DashboardDetailsComponent implements OnInit {
   displayIframe: boolean = true;
   isTableauProdUrl: boolean = false;
 
-  constructor(private dashboardService: DashboardService) {}
+  constructor(private dashboardService: DashboardService, private _location: Location) {}
   ngOnInit(): void {
     this.dashboard = history.state;
     this.isTableauProdUrl = this.dashboard.url.includes(
@@ -39,5 +39,8 @@ export class DashboardDetailsComponent implements OnInit {
         }
       );
     }
+  }
+  backClick() {
+    this._location.back();
   }
 }

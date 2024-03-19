@@ -3,8 +3,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Dashboard } from '../types/responses/Dashboard';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { Dashboards } from '../types/responses/Dashboards';
+import { Router } from '@angular/router';
 import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
-
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-dashboards',
   standalone: true,
@@ -13,6 +14,7 @@ import { DashboardCardComponent } from '../dashboard-card/dashboard-card.compone
   styleUrl: './dashboards.component.scss'
 })
 export class DashboardsComponent implements OnInit {
+  constructor(private readonly router: Router, private _location: Location) {}
   @Input() id!: string;
   dashboard!: Dashboard;
   active = 1;
@@ -39,5 +41,8 @@ export class DashboardsComponent implements OnInit {
           ? 3
           : 2
         : 1;
+  }
+  backClick() {
+    this._location.back();
   }
 }

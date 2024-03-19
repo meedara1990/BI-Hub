@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Location} from '@angular/common';
 @Component({
   selector: 'app-dashboard-search',
   standalone: true,
@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard-search.component.html',
   styleUrl: './dashboard-search.component.scss'
 })
-export class DashboardSearchComponent {}
+export class DashboardSearchComponent {
+  constructor(private _location: Location) {}
+  backClick() {
+    this._location.back();
+  }
+}

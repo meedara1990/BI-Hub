@@ -392,10 +392,13 @@ section {
 
 .profile-box {
   margin-left: -135px;
-  min-width: 280px;
+  min-width: 270px;
 
 }
-
+.back-btn{
+  color: #0D6EFD !important;
+  cursor: pointer;
+}
 .profile-box h3 {
   font-size: 20px;
 }
@@ -407,7 +410,7 @@ section {
 
 .profile-icon {
   font-size: 50px !important;
-  width: 280px;
+  width: 270px;
   margin: 0 auto;
   margin-top: -40px;
 }
