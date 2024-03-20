@@ -1,9 +1,13 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <section id="intro2">
   <div class="container-lg">
     <div class="row g-4 pt-4 justify-content-center align-items-center">
       <div class="col">
         <h3 class="body-title" style="text-align: center">
-          <!-- <i class="fa-light fa-circle-chevron-left back-btn" (click)="backClick()"></i> -->
+          <i
+            class="fa-solid fa-chevron-left back-btn"
+            (click)="backClick()"></i>
           {{dashboard.displayName}}
         </h3>
         <p class="body-text" style="text-align: center">
