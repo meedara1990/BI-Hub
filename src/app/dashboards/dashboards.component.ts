@@ -5,7 +5,7 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { Dashboards } from '../types/responses/Dashboards';
 import { Router } from '@angular/router';
 import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
-import {Location} from '@angular/common';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-dashboards',
   standalone: true,
@@ -14,7 +14,10 @@ import {Location} from '@angular/common';
   styleUrl: './dashboards.component.scss'
 })
 export class DashboardsComponent implements OnInit {
-  constructor(private readonly router: Router, private _location: Location) {}
+  constructor(
+    private readonly router: Router,
+    private _location: Location
+  ) {}
   @Input() id!: string;
   dashboard!: Dashboard;
   active = 1;

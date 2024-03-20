@@ -1,8 +1,11 @@
 <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
 <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <div class="card-body" role="grid">
-  <div class="d-flex flex-column bd-highlight mb-3" style="min-height: 170px">
-    <div class="mb-auto" (click)="onClick()">
+  <div
+    class="d-flex flex-column bd-highlight mb-3"
+    style="min-height: 150px"
+    (click)="openDashboardDetails()">
+    <div class="mb-auto">
       <div class="row">
         <div class="col-sm-9">
           <h5 class="card-title">{{dashboard.childDisplayName}}</h5>
