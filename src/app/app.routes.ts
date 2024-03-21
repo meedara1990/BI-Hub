@@ -7,23 +7,23 @@ import { DashboardSearchComponent } from './dashboard-search/dashboard-search.co
 export const routes: Routes = [
   {
     path: '',
-    title: 'Main Dashboard',
+    title: 'BI',
     component: MainDashboardComponent,
     pathMatch: 'full'
   },
   {
     path: 'dashboards/:id',
-    title: 'Dashboards',
+    title: 'BI',
     component: DashboardsComponent
   },
   {
     path: 'dashboards-details/:id/:childId',
-    title: 'DashboardDetails',
+    title: 'BI',
     component: DashboardDetailsComponent
   },
   {
     path: 'dashboards-search',
-    title: 'DashboardSearch',
+    title: 'BI',
     component: DashboardSearchComponent
   },
   {

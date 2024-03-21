@@ -23,7 +23,7 @@ export class DashboardCardComponent implements OnInit {
     console.log('Dashbaord', this.dashboard);
   }
 
-  onClick() {
+  openDashboardDetails() {
     const detailsURL = `/dashboards-details/${this.parentId}/${this.dashboard.childId}`;
     console.log('detailsURL', detailsURL, this.dashboard);
     this.router.navigate([detailsURL], {

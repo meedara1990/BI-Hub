@@ -71,7 +71,6 @@ export class AppComponent implements OnInit {
       });
     } else if (accessToken != null) {
       this.populateUserInfo(accessToken);
-      this.isLoggedIn = true;
     } else {
       console.log('User Auth Code is Empty');
       this.isLoggedIn = false;
@@ -87,6 +86,7 @@ export class AppComponent implements OnInit {
           JSON.stringify(response)
         );
         this.userService.setUser();
+        this.isLoggedIn = true;
       },
       (error: HttpErrorResponse) => {
         console.log('Get profileInfo Error', error);

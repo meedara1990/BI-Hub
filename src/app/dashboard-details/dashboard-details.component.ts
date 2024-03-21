@@ -5,7 +5,7 @@ import { Dashboards } from '../types/responses/Dashboards';
 import { SanitizePipe } from '../shared/sanitize.pipe';
 import { DashboardService } from '../shared/dashboard.service';
 import { HttpErrorResponse } from '@angular/common/http';
-import {Location} from '@angular/common';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-dashboard-details',
   standalone: true,
@@ -19,7 +19,10 @@ export class DashboardDetailsComponent implements OnInit {
   displayIframe: boolean = true;
   isTableauProdUrl: boolean = false;
 
-  constructor(private dashboardService: DashboardService, private _location: Location) {}
+  constructor(
+    private dashboardService: DashboardService,
+    private _location: Location
+  ) {}
   ngOnInit(): void {
     this.dashboard = history.state;
     this.isTableauProdUrl = this.dashboard.url.includes(
