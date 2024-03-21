@@ -17,6 +17,9 @@
   font-style: normal;
   font-display: swap;
 }
+body{
+  background-color: #EDEDED;
+}
 
 @font-face {
   font-family: 'Open Sans Bold';
@@ -549,15 +552,6 @@ section {
   }
 }
 
-@media (min-width:1920px) {
-
-  #intro1,
-  #intro2,
-  #intro3 {
-    min-height: 500px;
-  }
-
-}
 
 @media (max-width:767px) {
   .footer_email-input {
