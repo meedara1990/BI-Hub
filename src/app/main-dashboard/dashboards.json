@@ -86,28 +86,42 @@
         {
           "childId": "7",
           "childGroup": "BGB",
-          "childDisplayName": "BGB - Customer Spend Band Dashboard",
-          "url": "https://tableau-prod.nmgcloud.io/#/views/NMCustomerSpendBandDashboard/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
-          "description": "Scores customer spending at the NM level only. Spend band performance at the NMB/NMS/NMO level. Breakdowns available to the Price Type and Division level."
+          "childDisplayName": "BGB - FY23 BG Business Performance Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/FY23BGBusinessPerformanceDashboard/BGBSegmentSummary",
+          "description": "Archived Performance Dashboard. Price type of Non-Reg is broken out into reg promo/clearance in current version."
         },
         {
           "childId": "8",
-          "childGroup": "NMG",
-          "childDisplayName": "NMB - NMS Store by Spend Band Dashboard",
-          "url": "https://tableau-prod.nmgcloud.io/#/views/NMSStorebySpendBand/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
-          "description": "Customer spend band performance at the Region/Metro/Store level for NMS. Breakdowns available to the Price Type and Division level"
+          "childGroup": "BGB",
+          "childDisplayName": "BGB - FY 23 BGO New Customer - Repurchase Rates",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/FY23BGONewCustomer-RepurchaseRates/BGONewCustomers?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "New customers acquired online in FY23.  Tracks sales, repurchase rates, acquisition channel, and customer segmentation."
         },
         {
           "childId": "9",
-          "childGroup": "NMB",
-          "childDisplayName": "NMB - Customer Spend Band Dashboard",
-          "url": "https://tableau-prod.nmgcloud.io/#/views/NMCustomerSpendBandDashboard/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
-          "description": "Scores customer spending at the NM level only. Spend band performance at the NMG/Store/Online level. Breakdowns available to the Price Type and Division level."
+          "childGroup": "BGB",
+          "childDisplayName": "BGB - Customer Spend Band Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/BGCustomerSpendBandDashboard/BGSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "BG Sales & Trips by Cust Spend Band broken down by Channel, Division, Price Type with 12mo History & LY/FY19."
         },
         {
           "childId": "10",
+          "childGroup": "NMG",
+          "childDisplayName": "Customer Spend Band Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMGCustomerSpendBandDashboard/NMGSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Scores customer spending at the group level across both NM and BG. Spend band performance at the NMG/Store/Online level. Breakdowns available to the Price Type and Division level"
+        },
+        {
+          "childId": "11",
           "childGroup": "NMB",
-          "childDisplayName": "NMB - NMS Store by Spendband Dashboard",
+          "childDisplayName": "NMB - Customer Spend Band Dashboard",
+          "url": "https://tableau-prod.nmgcloud.io/#/views/NMCustomerSpendBandDashboard/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
+          "description": "Scores customer spending at the NM level only. Spend band performance at the NMB/NMS/NMO level. Breakdowns available to the Price Type and Division level"
+        },
+        {
+          "childId": "12",
+          "childGroup": "NMB",
+          "childDisplayName": "NMB - NMS Store by Spend Band Dashboard",
           "url": "https://tableau-prod.nmgcloud.io/#/views/NMSStorebySpendBand/NMSBSegmentSummary?:iid=1&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link&allowFullScreen=true",
           "description": "Customer spend band performance at the Region/Metro/Store level for NMS. Breakdowns available to the Price Type and Division level"
         }
@@ -165,15 +179,15 @@
           "childId": "0",
           "childGroup": "NMG",
           "childDisplayName": "CA Relationship",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/5ab88c73-b2e1-469a-bd22-3859b932f0e3/overview/hubUrl/%2Fcatalog",
-          "description": "Store CRM KPIs to track LTM # of Customers in an SA Relationship, and graduate customers not in a relationship based on current trip level (1+, 2+, etc.)."
+          "url": "https://nmg.us.qlikcloud.com/sense/app/5ab88c73-b2e1-469a-bd22-3859b932f0e3/sheet/c7047021-3d31-4391-9ff1-00db3fb61dbf/state/analysis/hubUrl/%2Fcatalog",
+          "description": "Coming soon"
         },
         {
           "childId": "1",
           "childGroup": "NMG",
           "childDisplayName": "Store/Client Advisor Performance Dashboard",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/0e89afc4-77a3-4da2-9ec5-8a51626c5504/overview/hubUrl/%2Fcatalog",
-          "description": "Store CRM KPIs to track overall Digitally Assisted Sales & Improve Seller Adoption & Effectiveness from Connect Outreach & Content."
+          "url": "https://nmg.us.qlikcloud.com/sense/app/0e89afc4-77a3-4da2-9ec5-8a51626c5504/sheet/6a86da6a-572d-4829-a602-517a8211c7fd/state/analysis",
+          "description": "Coming soon"
         },
         {
           "childId": "2",
@@ -201,8 +215,8 @@
           "childId": "5",
           "childGroup": "NMG",
           "childDisplayName": "Associate Score Card",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/8456f1d0-0322-411f-badf-c85505c2084a/overview/hubUrl/%2Fcatalog%3Fspace_filter%3D633f1d7b43da473e8b890108",
-          "description": "Seller Performance & Productivity  KPIs to support individual SA accountability to customer, merchandise, and financial goals & outcomes."
+          "url": "https://nmg.us.qlikcloud.com/sense/app/8456f1d0-0322-411f-badf-c85505c2084a/sheet/fb541151-743d-428f-bf1f-174eeed604dd/state/analysis/hubUrl/%2Fcatalog%3Fspace_filter%3D633f1d7b43da473e8b890108",
+          "description": "Coming soon"
         }
       ]
     },
@@ -260,7 +274,7 @@
         {
           "childGroup": "NMG",
           "childId": "6",
-          "childDisplayName": "NMG Hourly",
+          "childDisplayName": "NMG - Hourly Marketing Channel Performance",
           "url": "https://tableau-prod.nmgcloud.io/#/views/NMGHourly_17103404440150/HourlyKPI?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Intraday performance trending by channel. Includes core metrics - Traffic/AOV/CVR and Demand. Can Toggle between Brands (BGO/HCO/NMO)."
         }
@@ -286,43 +300,43 @@
           "childGroup": "NMG",
           "childId": "1",
           "childDisplayName": "Item Lifecycle Report",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/5551d2ab-6561-4577-b602-0d98bf3e0173/overview",
-          "description": "Merchant & Web Ops KPIs to proactively capture and resolve aged and outstanding items, reduce overall NOW and optimize time to sell."
+          "url": "https://nmg.us.qlikcloud.com/sense/app/5551d2ab-6561-4577-b602-0d98bf3e0173/sheet/e77f5e5c-6604-49e3-b511-838aaf0d8ff9/state/analysis",
+          "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "2",
           "childDisplayName": "Aged On Hand",
           "url": "https://tableau-prod.nmgcloud.io/#/views/AgeonHand/AgeonHandSummary",
-          "description": "JMS Inventory Aging Reports"
+          "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "3",
           "childDisplayName": "Brand Division and Brand Location",
           "url": "https://tableau-prod.nmgcloud.io/#/views/BrandDivisionandBrandLocation/BrandDivision",
-          "description": "JMS Brand Division & Location Breakdown"
+          "description": "coming soon"
         },
         {
           "childGroup": "NMG",
           "childId": "4",
-          "childDisplayName": "Case Card Items Retail over $20,000",
+          "childDisplayName": "Case Card Value Report",
           "url": "https://tableau-prod.nmgcloud.io/views/CaseCardOver20K75Kand100K/CaseCardOverCostRetail?:iid=4&:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
-          "description": "JMS Inventory Deep-Dive and Tracking for Case Card Items Over $20K"
+          "description": "coming soon"
         },
         {
           "childId": "5",
           "childGroup": "NMG",
           "childDisplayName": "Certificate of Sale",
           "url": "https://tableau-prod.nmgcloud.io/#/views/CertificateofSale/HowTo",
-          "description": "JMS Tracking for Certificate of Sale"
+          "description": "coming soon"
         },
         {
           "childId": "6",
           "childGroup": "NMG",
           "childDisplayName": "Cross Reference Report",
           "url": "https://tableau-prod.nmgcloud.io/#/views/CrossReferenceReport/NewPIMSKUOLDSKU",
-          "description": "JMS Inventory Reconciliation & Cross Reference Report"
+          "description": "coming soon"
         },
         {
           "childGroup": "NMG",
@@ -336,14 +350,14 @@
           "childId": "8",
           "childDisplayName": "Product History Report",
           "url": "https://tableau-prod.nmgcloud.io/views/ProductHistoryReport/ProductHistoryReport?:iid=4:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
-          "description": "JMS Product History & Lifecycle Log"
+          "description": "coming soon"
         },
         {
           "childId": "9",
           "childGroup": "NMG",
           "childDisplayName": "Serial Numbers by Vendor and Item",
           "url": "https://tableau-prod.nmgcloud.io/#/views/SerialNumbersbyVendorandItem/SerialNumbersByVendorandItem",
-          "description": "JMS Serial Number Pulls by Vendor and Item Criteria"
+          "description": "coming soon"
         }
       ]
     },
@@ -386,8 +400,8 @@
           "childGroup": "NMG",
           "childName": "",
           "childDisplayName": "Supply Chain Enterprise Dashboard",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/f6a28ba1-26b8-405f-b26e-ce9c1430ee31/overview/hubUrl/%2Fcatalog",
-          "description": "Supply Chain KPIs to monitor customer order fulfillment throughput and status.",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/f6a28ba1-26b8-405f-b26e-ce9c1430ee31/sheet/6d974969-9da8-4168-800f-82e5513af5cb/state/analysis/hubUrl/%2Fcatalog",
+          "description": "coming soon",
           "parentName": "supply-chain"
         }
       ]
