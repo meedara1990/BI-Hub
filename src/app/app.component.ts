@@ -28,7 +28,7 @@ import { HttpErrorResponse } from '@angular/common/http';
   ]
 })
 export class AppComponent implements OnInit {
-  isLoggedIn: boolean = true;
+  isLoggedIn: boolean = false;
   isHomepage: boolean = false;
   constructor(
     private authService: AuthService,
@@ -101,7 +101,7 @@ export class AppComponent implements OnInit {
     console.log('check app component onInit', environment.testStr);
     setTimeout(() => {
       //this.checkAuthentication();
-      //this.isLoggedIn = false;
+      this.isLoggedIn = false;
     }, 2000);
   }
 
