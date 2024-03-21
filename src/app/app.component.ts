@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
@@ -29,12 +29,20 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class AppComponent implements OnInit {
   isLoggedIn: boolean = false;
-
+  isHomepage: boolean = false;
   constructor(
     private authService: AuthService,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
   ) {
-    console.log('app component constructor called');
+    this.router.events.subscribe((val) => {
+      if (val instanceof NavigationStart) {
+        this.isHomepage = false;
+        if (val.url === '/') {
+          this.isHomepage = true;
+        }
+      }
+    });
     const redirectedUrl = window.location.href;
     if (redirectedUrl.includes(AppConstants.AWS.CODE) == true) {
       const queryString = window.location.search;
