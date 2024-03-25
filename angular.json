@@ -53,6 +53,17 @@
                 }
               ]
             },
+            "local": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ]
+            },
             "qa": {
               "optimization": false,
               "extractLicenses": false,
@@ -96,9 +107,12 @@
             },
             "dev": {
               "buildTarget": "bi-hub:build:dev"
+            },
+            "local": {
+              "buildTarget": "bi-hub:build:local"
             }
           },
-          "defaultConfiguration": "dev"
+          "defaultConfiguration": "local"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

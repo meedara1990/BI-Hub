@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((val) => {
       if (val instanceof NavigationStart) {
         this.isHomepage = false;
-        if (val.url === '/') {
+        if (val.url === '/bi') {
           this.isHomepage = true;
         }
       }
@@ -100,9 +100,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     console.log('check app component onInit', environment.testStr);
     setTimeout(() => {
-      //this.checkAuthentication();
-      this.isLoggedIn = false;
-    }, 2000);
+     // this.checkAuthentication();
+      this.isLoggedIn = true;
+    }, 1500);
   }
 
   checkAuthentication() {

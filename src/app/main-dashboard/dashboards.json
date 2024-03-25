@@ -274,7 +274,7 @@
         {
           "childGroup": "NMG",
           "childId": "6",
-          "childDisplayName": "NMG - Hourly Marketing Channel Performance",
+          "childDisplayName": "Hourly Marketing Channel Performance",
           "url": "https://tableau-prod.nmgcloud.io/#/views/NMGHourly_17103404440150/HourlyKPI?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
           "description": "Intraday performance trending by channel. Includes core metrics - Traffic/AOV/CVR and Demand. Can Toggle between Brands (BGO/HCO/NMO)."
         }
@@ -300,7 +300,7 @@
           "childGroup": "NMG",
           "childId": "1",
           "childDisplayName": "Item Lifecycle Report",
-          "url": "https://nmg.us.qlikcloud.com/sense/app/5551d2ab-6561-4577-b602-0d98bf3e0173/sheet/e77f5e5c-6604-49e3-b511-838aaf0d8ff9/state/analysis",
+          "url": "https://nmg.us.qlikcloud.com/sense/app/5551d2ab-6561-4577-b602-0d98bf3e0173/overview",
           "description": "coming soon"
         },
         {

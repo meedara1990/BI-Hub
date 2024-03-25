@@ -9,7 +9,6 @@
       <div class="row">
         <div class="col-sm-9">
           <h5 class="card-title">{{dashboard.displayName}}</h5>
-          <p class="card-text">{{dashboard.description}}</p>
         </div>
         <div class="col-sm-3 text-right">
           <span style="font-size: 2em" [ngStyle]="{'color': dashboard.color}">
@@ -19,6 +18,9 @@
               [ngStyle]="{'background': dashboard.bgColor}"></i>
           </span>
         </div>
+      </div>
+      <div class="row">
+        <p class="card-text p-1">{{dashboard.description}}</p>
       </div>
     </div>
   </div>

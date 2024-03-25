@@ -6,7 +6,7 @@ import { DashboardSearchComponent } from './dashboard-search/dashboard-search.co
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'bi',
     title: 'BI',
     component: MainDashboardComponent,
     pathMatch: 'full'
@@ -28,6 +28,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: ''
-  }
+    redirectTo: '/bi'
+  },
+  { path: '', redirectTo: '/bi', pathMatch: 'full' }
 ];

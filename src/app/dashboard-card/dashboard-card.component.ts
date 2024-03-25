@@ -22,12 +22,4 @@ export class DashboardCardComponent implements OnInit {
   ngOnInit(): void {
     console.log('Dashbaord', this.dashboard);
   }
-
-  openDashboardDetails() {
-    const detailsURL = `/dashboards-details/${this.parentId}/${this.dashboard.childId}`;
-    console.log('detailsURL', detailsURL, this.dashboard);
-    this.router.navigate([detailsURL], {
-      state: this.dashboard
-    });
-  }
 }

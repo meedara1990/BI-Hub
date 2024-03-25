@@ -48,4 +48,11 @@ export class DashboardsComponent implements OnInit {
   backClick() {
     this._location.back();
   }
+  openDashboardDetails(child: Dashboards) {
+    const detailsURL = `/dashboards-details/${this.dashboard.id}/${child.childId}`;
+    console.log('detailsURL', detailsURL, this.dashboard);
+    this.router.navigate([detailsURL], {
+      state: child
+    });
+  }
 }

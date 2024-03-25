@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
   isCollapsed = false;
   homepage() {
-    this.router.navigate(['/']);
+    this.router.navigate(['/bi']);
   }
   logout() {
     localStorage.clear();

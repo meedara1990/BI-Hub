@@ -1,15 +1,11 @@
 <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
 <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
 <div class="card-body" role="grid">
-  <div
-    class="d-flex flex-column bd-highlight mb-3"
-   
-    (click)="openDashboardDetails()">
+  <div class="d-flex flex-column bd-highlight mb-3">
     <div class="mb-auto">
       <div class="row">
         <div class="col-sm-9">
           <h5 class="card-title">{{dashboard.childDisplayName}}</h5>
-          <p class="card-text">{{dashboard.description}}</p>
         </div>
         <div class="col-sm-3 text-right">
           <span style="font-size: 2em" [ngStyle]="{'color': color}">
@@ -19,6 +15,9 @@
               [ngStyle]="{'background': bgcolor}"></i>
           </span>
         </div>
+      </div>
+      <div class="row">
+        <p class="card-text p-1">{{dashboard.description}}</p>
       </div>
     </div>
   </div>
