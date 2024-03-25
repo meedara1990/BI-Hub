@@ -3,7 +3,7 @@
     {
       "id": "KPI",
       "displayName": "NMG KPIs",
-      "description": "Executive Dashboards for Board, GLT & SLT members",
+      "description": "Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.Executive Dashboards for Board, GLT & SLT members.",
       "faIcon":"fa-chart-line",
       "color":"#0D6EFD",
       "bgColor":"#9EC5FE",
@@ -13,7 +13,7 @@
           "childGroup": "NMG",
           "childDisplayName": "Executive Dashboard",
           "url": "https://tableau-prod.nmgcloud.io/views/ExecutiveDashboard/ExecutiveSummary-Monthly?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link",
-          "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation"
+          "description": "Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation.Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creation. Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creatio.Goal of the Executive Dashboard is to provide the leadership team, Board, and Investor Group with a quarterly scorecard on the quality of performance and value creatio"
         },
         {
           "childId": "1",
